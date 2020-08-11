@@ -1,0 +1,104 @@
+# main links
+main:
+  - title: "Get Started"
+    url: /docs/quick-start-guide/
+  - title: "Tutorials"
+    url: /tutorials/get-started-in-60-seconds/
+  - title: "Resources"
+    url: /resources/community-question-answering/
+  - title: "Docs"
+    url: https://matchzoo.readthedocs.io/en/master/
+  - title: "About"
+    url: /about/
+
+tutorials:
+  - title: Learning MatchZoo
+    children:
+      - title: "Get Started in 60 Seconds"
+        url: /tutorials/get-started-in-60-seconds/
+      - title: "Learning MatchZoo with Examples"
+        url: /tutorials/get-started-in-60-seconds/
+  - title: Understand Models
+    children:
+      - title: "DRMM"
+        url: /tutorials/get-started-in-60-seconds/
+      - title: "BERT"
+        url: /tutorials/get-started-in-60-seconds/
+  - title: Trainer
+    children:
+      - title: "Optimizer"
+        url: /tutorials/get-started-in-60-seconds/
+      - title: "Loss"
+        url: /tutorials/get-started-in-60-seconds/
+
+
+resources:
+  - title: Resources
+    children:
+      - title: "Ad-hoc Information Retrieval"
+        url: /resources/ad-hoc-information-retrieval/
+      - title: "Community Question Answering"
+        url: /resources/community-question-answering/
+      - title: "Paraphrase Identification"
+        url: /resources/paraphrase-identification/
+      - title: "Natural Language Inference"
+        url: /resources/natural-language-inference/
+      - title: "Response Retrieval"
+        url: /resources/response-retrieval/
+
+# documentation links
+docs:
+  - title: Getting Started
+    children:
+      - title: "Quick-Start Guide"
+        url: /docs/quick-start-guide/
+      - title: "Structure"
+        url: /docs/structure/
+      - title: "Installation"
+        url: /docs/installation/
+      - title: "Upgrading"
+        url: /docs/upgrading/
+  - title: Customization
+    children:
+      - title: "Configuration"
+        url: /docs/configuration/
+      - title: "Overriding Theme Defaults"
+        url: /docs/overriding-theme-defaults/
+      - title: "Navigation"
+        url: /docs/navigation/
+      - title: "UI Text"
+        url: /docs/ui-text/
+      - title: "Authors"
+        url: /docs/authors/
+      - title: "Layouts"
+        url: /docs/layouts/
+  - title: Content
+    children:
+      - title: "Working with Posts"
+        url: /docs/posts/
+      - title: "Working with Pages"
+        url: /docs/pages/
+      - title: "Working with Collections"
+        url: /docs/collections/
+      - title: "Helpers"
+        url: /docs/helpers/
+      - title: "Utility Classes"
+        url: /docs/utility-classes/
+  - title: Extras
+    children:
+      - title: "Stylesheets"
+        url: /docs/stylesheets/
+      - title: "JavaScript"
+        url: /docs/javascript/
+  - title: Meta
+    children:
+      - title: "History"
+        url: /docs/history/
+      - title: "Contributing"
+        url: /docs/contributing/
+      - title: "Old 2.2 Docs"
+        url: /docs/docs-2-2/
+      - title: "License"
+        url: /docs/license/
+      - title: "Terms &amp; Privacy Policy"
+        url: /terms/
