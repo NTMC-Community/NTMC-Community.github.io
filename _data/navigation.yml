@@ -5,7 +5,7 @@ main:
   - title: "Tutorials"
     url: /tutorials/installation/
   - title: "Resources"
-    url: /resources/overview/
+    url: /resources/text-matching-progress/
   - title: "Docs"
     url: https://matchzoo.readthedocs.io/en/master/
   - title: "About"
@@ -39,8 +39,8 @@ tutorials:
 resources:
   - title: Resources
     children:
-      - title: "Overview"
-        url: /resources/overview/
+      - title: "Text Matching Progress"
+        url: /resources/text-matching-progress/
   - title: Tasks
     children:
       - title: "Ad-hoc Information Retrieval"

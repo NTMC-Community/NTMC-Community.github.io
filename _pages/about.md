@@ -40,70 +40,6 @@ If you use MatchZoo in your research, please use the following BibTex entry.
   } 
   ```
 
-
-## Development Team
-
-<table border="0">
-  <tbody>
-    <tr align="center">
-      <td>
-         <a href="https://github.com/faneshion"><img width="40" height="40" src="https://github.com/faneshion.png?s=40" alt="faneshion"></a><br>
-         <a href="http://www.bigdatalab.ac.cn/~fanyixing/">Yixing Fan</a> 
-        <p>Core Dev<br>
-        ASST PROF, ICT</p>
-      </td>
-      <td>
-         <a href="https://github.com/Chriskuei"><img width="40" height="40" src="https://github.com/Chriskuei.png?s=40" alt="Chriskuei"></a><br>
-         <a href="https://github.com/Chriskuei">Jiangui Chen</a> 
-        <p>Core Dev<br> PhD. ICT</p>
-      </td>
-      <td>
-         <a href="https://github.com/caiyinqiong"><img width="40" height="40" src="https://github.com/caiyinqiong.png?s=36" alt="caiyinqiong"></a><br>
-         <a href="https://github.com/caiyinqiong">Yinqiong Cai</a>
-         <p>Core Dev<br> M.S. ICT</p>
-      </td>
-      <td>
-         <a href="https://github.com/pl8787"><img width="40" height="40" src="https://github.com/pl8787.png?s=40" alt="pl8787"></a><br>
-         <a href="https://github.com/pl8787">Liang Pang</a> 
-        <p>Core Dev<br>
-        ASST PROF, ICT</p>
-      </td>
-      <td>
-         <a href="https://github.com/lixinsu"><img width="40" height="40" src="https://github.com/lixinsu.png?s=40" alt="lixinsu"></a><br>
-         <a href="https://github.com/lixinsu">Lixin Su</a>
-        <p>Dev<br>
-        PhD. ICT</p>
-      </td>
-    </tr>
-    <tr align="center">
-      <td>
-         <a href="https://github.com/ChrisRBXiong"><img width="40" height="40" src="https://github.com/ChrisRBXiong.png?s=40" alt="ChrisRBXiong"></a><br>
-         <a href="https://github.com/ChrisRBXiong">Ruibin Xiong</a> 
-        <p>Dev<br>
-        M.S. ICT</p>
-      </td>
-      <td>
-         <a href="https://github.com/dyuyang"><img width="40" height="40" src="https://github.com/dyuyang.png?s=40" alt="dyuyang"></a><br>
-         <a href="https://github.com/dyuyang">Yuyang Ding</a> 
-        <p>Dev<br>
-        M.S. ICT</p>
-      </td>
-      <td>
-         <a href="https://github.com/rgtjf"><img width="40" height="40" src="https://github.com/rgtjf.png?s=36" alt="rgtjf"></a><br>
-         <a href="https://github.com/rgtjf">Junfeng Tian</a> 
-        <p>Dev<br>
-        M.S. ECNU</p>
-      </td>
-      <td>
-         <a href="https://github.com/wqh17101"><img width="40" height="40" src="https://github.com/wqh17101.png?s=40" alt="wqh17101"></a><br>
-         <a href="https://github.com/wqh17101">Qinghua Wang</a> 
-        <p>Documentation<br>
-        B.S. Shandong Univ.</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
 ## Project Organizers
 
 - Jiafeng Guo
@@ -114,7 +50,6 @@ If you use MatchZoo in your research, please use the following BibTex entry.
   * [Homepage](http://www.bigdatalab.ac.cn/~lanyanyan/)
 - Xueqi Cheng
   * Institute of Computing Technology, Chinese Academy of Sciences
-  
   * [Homepage](http://www.bigdatalab.ac.cn/~cxq/)
   
     
