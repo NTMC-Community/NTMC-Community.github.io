@@ -9,7 +9,6 @@ toc: true
 ---
 
 Goal of this tutorial:
-
 - Understand MatchZoo library and neural networks at a high level.
 - Train a small neural network
 

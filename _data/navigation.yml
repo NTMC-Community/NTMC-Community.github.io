@@ -1,9 +1,7 @@
 # main links
 main:
-  - title: "Get Started"
-    url: /docs/quick-start-guide/
   - title: "Tutorials"
-    url: /tutorials/get-started-in-60-seconds/
+    url: /tutorials/installation/
   - title: "Resources"
     url: /resources/community-question-answering/
   - title: "Docs"
@@ -12,6 +10,10 @@ main:
     url: /about/
 
 tutorials:
+  - title: Get Ready
+    children:
+      - title: "Installation"
+        url: /tutorials/installation
   - title: Learning MatchZoo
     children:
       - title: "Get Started in 60 Seconds"

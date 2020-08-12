@@ -1,4 +1,12 @@
-# Paraphrase Identification
+---
+title: "Paraphrase Identification"
+permalink: /resources/paraphrase-identification/
+excerpt: "Determine whether two sentences have the same meaning, a problem considered a touchstone of natural language understanding."
+last_modified_at: 2020-08-11
+redirect_from:
+  - /theme-setup/
+toc: true
+---
 
 **Paraphrase Identification** is an task to determine whether two sentences have the same meaning, a problem considered a touchstone of natural language understanding.
 

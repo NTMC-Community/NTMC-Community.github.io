@@ -1,4 +1,12 @@
-# Natural language Inference
+---
+title: "Natural Language Inference"
+permalink: /resources/natural-language-inference/
+excerpt: "determining whether a hypothesis is true (entailment), false (contradiction), or undetermined (neutral) given a premise."
+last_modified_at: 2020-08-11
+redirect_from:
+  - /theme-setup/
+toc: true
+---
 
 **Natural Language Inference** is the task of determining whether a "hypothesis" is true (entailment), false (contradiction), or undetermined (neutral) given a "premise".
 
