@@ -58,5 +58,5 @@ brand:
 ## COMMUNITY
 {% include feature_row id="community"%}
 
-## COMPANIES & UNIVERSITIES USING PYTORCH
+## COMPANIES & UNIVERSITIES USING MATCHZOO
 {% include feature_row id="brand"%}
