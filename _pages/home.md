@@ -4,6 +4,7 @@ permalink: /
 hidden: true
 header:
   overlay_color: "#3F91C5"
+  title: "MatchZoo"
   # overlay_image: /assets/images/mm-home-page-feature.jpg
   actions:
     - label: "<i class='fas fa-download'></i> Install MatchZoo"
@@ -45,13 +46,13 @@ features:
     excerpt: "A rich ecosystem of tools and libraries extends PyTorch and supports development in computer vision, NLP and more."
 
 brand:
-  - image_path: /assets/images/brand/CAS_ICT.jpg
-  - image_path: /assets/images/brand/tsinghua.jpg
+  - image_path: /assets/images/brand/ict.png
+  - image_path: /assets/images/brand/tsinghua.png
   - image_path: /assets/images/brand/cloudbrain.png
 
 ---
 
-## KEY FEATURES & CAPABILITIES
+<h2>KEY FEATURES & CAPABILITIES</h2>
 {% include feature_row id="features"%}
 
 ## COMMUNITY
