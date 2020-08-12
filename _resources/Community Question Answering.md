@@ -1,27 +1,19 @@
----
-title: "Community Question Answering"
-permalink: /resources/community-question-answering/
-excerpt: "Automatically search for relevant answers among many responses provided for a given question."
-last_modified_at: 2020-08-11
-redirect_from:
-  - /theme-setup/
-toc: true
----
+# Community Question Answering
 
 **Community Question Answer** is to automatically search for relevant answers among many responses provided for a given question (Answer Selection), and search for relevant questions to reuse their existing answers (Question Retrieval).
 
 ## Classic Datasets
 
-| Dataset                                                                      | Domain      | #Question | #Answer |
-| ---------------------------------------------------------------------------- | ----------- | --------- | ------- |
-| [**TRECQA**](https://trec.nist.gov/data/qa.html)                             | Open-domain | 1,229     | 5,3417  |
+| Dataset                                                      | Domain      | #Question | #Answer |
+| ------------------------------------------------------------ | ----------- | --------- | ------- |
+| [**TRECQA**](https://trec.nist.gov/data/qa.html)             | Open-domain | 1,229     | 5,3417  |
 | [**WikiQA**](https://www.microsoft.com/en-us/download/details.aspx?id=52419) | Open-domain | 3,047     | 29,258  |
-| [**InsuranceQA**](https://github.com/shuzi/insuranceQA)                      | Insurance   | 12,889    | 21,325  |
-| [**FiQA**](https://sites.google.com/view/fiqa)                               | Financial   | 6,648     | 57,641  |
-| Yahoo! Answers                                                               | Open-domain | 50,112    | 253,440 |
-| SemEval-2015 Task 3                                                          | Open-domain | 2,600     | 16,541  |
-| SemEval-2016 Task 3                                                          | Open-domain | 4,879     | 36,198  |
-| SemEval-2017 Task 3                                                          | Open-domain | 4,879     | 36,198  |
+| [**InsuranceQA**](https://github.com/shuzi/insuranceQA)      | Insurance   | 12,889    | 21,325  |
+| [**FiQA**](https://sites.google.com/view/fiqa)               | Financial   | 6,648     | 57,641  |
+| [**Yahoo! Answers**](https://webscope.sandbox.yahoo.com)     | Open-domain | 50,112    | 253,440 |
+| [**SemEval-2015 Task 3**](http://alt.qcri.org/semeval2015/task3/) | Open-domain | 2,600     | 16,541  |
+| [**SemEval-2016 Task 3**](http://alt.qcri.org/semeval2016/task3/) | Open-domain | 4,879     | 36,198  |
+| [**SemEval-2017 Task 3**](http://alt.qcri.org/semeval2017/task3/) | Open-domain | 4,879     | 36,198  |
 
 - [**TRECQA**](https://trec.nist.gov/data/qa.html) dataset is created by [Wang et. al.](https://www.aclweb.org/anthology/D07-1003) from TREC QA track 8-13 data, with candidate answers automatically selected from each question’s document pool using a combination of overlapping non-stop word counts and pattern matching. This data set is one of the most widely used benchmarks for [answer sentence selection](<https://aclweb.org/aclwiki/Question_Answering_(State_of_the_art)>).
 
@@ -45,11 +37,11 @@ toc: true
 
 | Model                                                        | Code                                                         |    MAP    |    MRR    | Paper                                                        |
 | :----------------------------------------------------------- | ------------------------------------------------------------ | :-------: | :-------: | :----------------------------------------------------------- |
-| Punyakanok (2004)                                            | -                                                            |   0.419   |   0.494   | [Mapping dependencies trees: An application to question answering, ISAIM 2004](http://cogcomp.cs.illinois.edu/papers/PunyakanokRoYi04a.pdf) |
-| Cui (2005)                                                   | -                                                            |   0.427   |   0.526   | [Question Answering Passage Retrieval Using Dependency Relations, SIGIR 2005](https://www.comp.nus.edu.sg/~kanmy/papers/f66-cui.pdf) |
-| Wang (2007)                                                  | -                                                            |   0.603   |   0.685   | [What is the Jeopardy Model? A Quasi-Synchronous Grammar for QA, EMNLP 2007](http://www.aclweb.org/anthology/D/D07/D07-1003.pdf) |
-| H&S (2010)                                                   | -                                                            |   0.609   |   0.692   | [Tree Edit Models for Recognizing Textual Entailments, Paraphrases, and Answers to Questions, NAACL 2010](http://www.aclweb.org/anthology/N10-1145) |
-| W&M (2010)                                                   | -                                                            |   0.595   |   0.695   | [Probabilistic Tree-Edit Models with Structured Latent Variables for Textual Entailment and Question Answering, COLING 2020](http://aclweb.org/anthology//C/C10/C10-1131.pdf) |
+| Punyakanok (2004)                                            | ![not in plan](https://img.shields.io/badge/matchzoo-not%20in%20plan-red) |   0.419   |   0.494   | [Mapping dependencies trees: An application to question answering, ISAIM 2004](http://cogcomp.cs.illinois.edu/papers/PunyakanokRoYi04a.pdf) |
+| Cui (2005)                                                   | ![not in plan](https://img.shields.io/badge/matchzoo-not%20in%20plan-red) |   0.427   |   0.526   | [Question Answering Passage Retrieval Using Dependency Relations, SIGIR 2005](https://www.comp.nus.edu.sg/~kanmy/papers/f66-cui.pdf) |
+| Wang (2007)                                                  | ![not in plan](https://img.shields.io/badge/matchzoo-not%20in%20plan-red) |   0.603   |   0.685   | [What is the Jeopardy Model? A Quasi-Synchronous Grammar for QA, EMNLP 2007](http://www.aclweb.org/anthology/D/D07/D07-1003.pdf) |
+| H&S (2010)                                                   | ![not in plan](https://img.shields.io/badge/matchzoo-not%20in%20plan-red) |   0.609   |   0.692   | [Tree Edit Models for Recognizing Textual Entailments, Paraphrases, and Answers to Questions, NAACL 2010](http://www.aclweb.org/anthology/N10-1145) |
+| W&M (2010)                                                   | ![not in plan](https://img.shields.io/badge/matchzoo-not%20in%20plan-red) |   0.595   |   0.695   | [Probabilistic Tree-Edit Models with Structured Latent Variables for Textual Entailment and Question Answering, COLING 2020](http://aclweb.org/anthology//C/C10/C10-1131.pdf) |
 | Yao (2013)                                                   | ![not in plan](https://img.shields.io/badge/matchzoo-not%20in%20plan-red) |   0.631   |   0.748   | [Answer Extraction as Sequence Tagging with Tree Edit Distance, NAACL 2013](http://www.aclweb.org/anthology/N13-1106.pdf) |
 | S&M (2013)                                                   | ![not in plan](https://img.shields.io/badge/matchzoo-not%20in%20plan-red) |   0.678   |   0.736   | [Automatic Feature Engineering for Answer Selection and Extraction, EMNLP 2013](http://www.aclweb.org/anthology/D13-1044.pdf) |
 | Backward (Shnarch et al., 2013)                              | ![not in plan](https://img.shields.io/badge/matchzoo-not%20in%20plan-red) |   0.686   |   0.754   | [Probabilistic Models for Lexical Inference, Ph.D. thesis 2013](http://u.cs.biu.ac.il/~nlp/wp-content/uploads/eyal-thesis-library-ready.pdf) |
@@ -106,4 +98,3 @@ toc: true
 | Compare-Aggregate (Bian et al., 2017)    | [![official](https://img.shields.io/badge/official-code-brightgreen)](https://github.com/wjbianjason/Dynamic-Clip-Attention) [![MatchZoo](https://img.shields.io/badge/matchzoo-ready-green)](https://github.com/NTMC-Community/MatchZoo-py/blob/dev/matchzoo/models/dynamic_clip.py) | 0.748     | 0.758     | [A Compare-Aggregate Model with Dynamic-Clip Attention for Answer Selection, CIKM 2017](https://dl.acm.org/citation.cfm?id=3133089&CFID=791659397&CFTOKEN=43388059) |
 | RE2 (Yang et al., 2019)                  | [![official](https://img.shields.io/badge/official-code-brightgreen)](https://github.com/alibaba-edu/simple-effective-text-matching) [![MatchZoo](https://img.shields.io/badge/matchzoo-ready-green)](https://github.com/NTMC-Community/MatchZoo-py/blob/dev/matchzoo/models/re2.py) | 0.7452    | 0.7618    | [Simple and Effective Text Matching with Richer Alignment Features, ACL 2019](https://www.aclweb.org/anthology/P19-1465.pdf) |
 | GSAMN (Lai et al., 2019)                 | [![official](https://img.shields.io/badge/official-code-brightgreen)](https://github.com/laituan245/StackExchangeQA) | **0.857** | **0.872** | [A Gated Self-attention Memory Network for Answer Selection, EMNLP 2019](https://arxiv.org/pdf/1909.09696.pdf) |
-
