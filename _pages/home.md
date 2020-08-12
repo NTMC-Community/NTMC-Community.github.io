@@ -12,7 +12,8 @@ header:
       url: "https://github.com/NTMC-Community/MatchZoo-py"
 excerpt: >
   Facilitating the design, comparison and sharing of deep text matching models.
-feature_row:
+
+community:
   - image_path: /assets/images/matchzoo-feature.png
     alt: "customizable"
     title: "Get started"
@@ -29,11 +30,32 @@ feature_row:
     btn_label: "Learn more"
   - image_path: /assets/images/matchzoo-feature.png
     alt: "100% free"
-    title: "Paper list"
-    excerpt: "Paper list"
+    title: "Resources"
+    excerpt: "Resources"
     url: "/resources/community-question-answering/"
     btn_class: "btn--primary"
-    btn_label: "Learn more"      
+    btn_label: "Learn more"
+
+features:
+  - title: "Production Ready"
+    excerpt: "Transition seamlessly between eager and graph modes with TorchScript, and accelerate the path to production with TorchServe."
+  - title: "Distributed Training"
+    excerpt: "Scalable distributed training and performance optimization in research and production is enabled by the torch.distributed backend."
+  - title: "Robust Ecosystem"
+    excerpt: "A rich ecosystem of tools and libraries extends PyTorch and supports development in computer vision, NLP and more."
+
+brand:
+  - image_path: /assets/images/brand/CAS_ICT.jpg
+  - image_path: /assets/images/brand/tsinghua.jpg
+  - image_path: /assets/images/brand/cloudbrain.png
+
 ---
 
-{% include feature_row %}
+## KEY FEATURES & CAPABILITIES
+{% include feature_row id="features"%}
+
+## COMMUNITY
+{% include feature_row id="community"%}
+
+## COMPANIES & UNIVERSITIES USING PYTORCH
+{% include feature_row id="brand"%}
