@@ -20,8 +20,8 @@ url                      : https://ntmc-community.github.io # the base hostname 
 baseurl                  :  # the subpath of your site, e.g. "/blog"
 repository               : "NTMC-Community/NTMC-Community.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+logo                     : "/assets/images/logo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+masthead_title           : MatchZoo # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -87,9 +87,9 @@ analytics:
 # Site Author
 author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
-  avatar           :
-  bio              :
-  location         :
+  avatar           : "/assets/images/ntmc.png"
+  bio              : Everything could be matched.
+  location         : Beijing, China
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"

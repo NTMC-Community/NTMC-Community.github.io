@@ -4,7 +4,7 @@ title: "About"
 excerpt: "MatchZoo."
 last_modified_at: 2020-08-12
 toc: true
-author_profile: false
+author_profile: true
 ---
 
 <div align='center'>
