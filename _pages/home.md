@@ -5,50 +5,45 @@ hidden: true
 header:
   overlay_color: "#3F91C5"
   title: "MatchZoo"
-  # overlay_image: /assets/images/mm-home-page-feature.jpg
+  overlay_image: /assets/images/home_feature.png
   actions:
     - label: "<i class='fas fa-download'></i> Install MatchZoo"
       url: "https://github.com/NTMC-Community/MatchZoo"
     - label: "<i class='fas fa-download'></i> Install MatchZoo-py"
       url: "https://github.com/NTMC-Community/MatchZoo-py"
 excerpt: >
-  Facilitating the design, comparison and sharing of deep text matching models.
+  Facilitating the design, comparison and sharing of neural text matching models.
 
 community:
-  - image_path: /assets/images/matchzoo-feature.png
-    alt: "customizable"
+  - image_path: /assets/images/community/get_started.png
+    alt: "get started"
     title: "Get started"
-    excerpt: "Get started"
+    excerpt: "MatchZoo is easy and efficient to use, getting started in 60 seconds."
     url: "/tutorials/installation/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/matchzoo-feature.png
-    alt: "fully responsive"
+  - image_path: /assets/images/community/documentation.png
+    alt: "documentation"
     title: "Documentation"
-    excerpt: "Documentation."
+    excerpt: "MatchZoo documentation includes API and model reference."
     url: "https://matchzoo.readthedocs.io/en/master/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/matchzoo-feature.png
-    alt: "100% free"
+  - image_path: /assets/images/community/resources.png
+    alt: "resources"
     title: "Resources"
-    excerpt: "Resources"
-    url: "/resources/community-question-answering/"
+    excerpt: "Explore awesome resources collected by MatchZoo teams."
+    url: "/resources/text-matching-progress/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
 
 features:
-  - title: "Production Ready"
-    excerpt: "Transition seamlessly between eager and graph modes with TorchScript, and accelerate the path to production with TorchServe."
+  - title: "High-quality Codebase"
+    excerpt: "With the unified data processing pipeline and simplified model configuration, MatchZoo is flexible and easy to use."
   - title: "SOTA Models"
-    excerpt: "Scalable distributed training and performance optimization in research and production is enabled by the torch.distributed backend."
+    excerpt: "Find more fashionable state-of-the-art text matching models in MatchZoo, give it a try with just a few lines of code."
   - title: "Text Matching Progress"
-    excerpt: "A rich ecosystem of tools and libraries extends PyTorch and supports development in computer vision, NLP and more."
-
-brand:
-  - image_path: /assets/images/brand/ict.png
-  - image_path: /assets/images/brand/tsinghua.png
-  - image_path: /assets/images/brand/cloudbrain.png
+    excerpt: "Keep track of the latest research on text matching, collect and organize information based on tasks."
 
 ---
 

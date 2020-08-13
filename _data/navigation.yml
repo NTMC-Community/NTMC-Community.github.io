@@ -20,20 +20,20 @@ tutorials:
     children:
       - title: "Get Started in 60 Seconds"
         url: /tutorials/get-started-in-60-seconds/
-      - title: "Learning MatchZoo with Examples"
-        url: /tutorials/get-started-in-60-seconds/
-  - title: Understand Models
-    children:
-      - title: "DRMM"
-        url: /tutorials/get-started-in-60-seconds/
-      - title: "BERT"
-        url: /tutorials/get-started-in-60-seconds/
-  - title: Trainer
-    children:
-      - title: "Optimizer"
-        url: /tutorials/get-started-in-60-seconds/
-      - title: "Loss"
-        url: /tutorials/get-started-in-60-seconds/
+  #     - title: "Learning MatchZoo with Examples"
+  #       url: /tutorials/get-started-in-60-seconds/
+  # - title: Understand Models
+  #   children:
+  #     - title: "DRMM"
+  #       url: /tutorials/get-started-in-60-seconds/
+  #     - title: "BERT"
+  #       url: /tutorials/get-started-in-60-seconds/
+  # - title: Trainer
+  #   children:
+  #     - title: "Optimizer"
+  #       url: /tutorials/get-started-in-60-seconds/
+  #     - title: "Loss"
+  #       url: /tutorials/get-started-in-60-seconds/
 
 
 resources:

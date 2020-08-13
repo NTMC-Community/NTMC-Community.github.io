@@ -12,6 +12,8 @@ Goal of this tutorial:
 - Understand MatchZoo library and neural networks at a high level.
 - Train a small neural network
 
+## Define a Task
+
 To train a [Deep Semantic Structured Model](https://www.microsoft.com/en-us/research/project/dssm/), make use of MatchZoo customized loss functions and evaluation metrics to define a task:
 
 ```python
@@ -24,6 +26,7 @@ ranking_task.metrics = [
     mz.metrics.MeanAveragePrecision()
 ]
 ```
+## Prepare Data
 
 Prepare input data:
 
@@ -72,6 +75,8 @@ validloader = mz.dataloader.DataLoader(
 )
 ```
 
+## Config Model
+
 Initialize the model, fine-tune the hyper-parameters:
 
 ```python
@@ -82,6 +87,8 @@ model.params['embedding_input_dim'] = preprocessor.context['embedding_input_dim'
 model.guess_and_fill_missing_params()
 model.build()
 ```
+
+## Start training
 
 `Trainer` is used to control the training flow:
 
