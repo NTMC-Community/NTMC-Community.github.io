@@ -59,4 +59,38 @@ brand:
 {% include feature_row id="community"%}
 
 ## COMPANIES & UNIVERSITIES USING MATCHZOO
-{% include feature_row id="brand"%}
+
+<div style="width: 80%; margin: 0 auto; height: 150px;">
+    <div style="width: 20%; float: left; border: 10px solid #fff;">
+      <img src="/assets/images/brand/microsoft.png" alt="">
+    </div>
+    <div style="width: 20%; float: left; border: 10px solid #fff;">
+      <img src="/assets/images/brand/tencent.png" alt="">
+    </div>
+    <div style="width: 20%; float: left; border: 10px solid #fff;">
+      <img src="/assets/images/brand/tsinghua.png" alt="">
+    </div>
+    <div style="width: 20%; float: left; border: 10px solid #fff;">
+      <img src="/assets/images/brand/CAS_ICT.jpg" alt="">
+    </div>
+    <div style="width: 20%; float: left; border: 10px solid #fff;">
+      <img src="/assets/images/brand/stanford.png" alt="">
+    </div>
+</div>
+<div style="width: 80%; margin: 0 auto; height: 150px;">
+    <div style="width: 20%; float: left; border: 10px solid #fff;">
+      <img src="/assets/images/brand/facebook.png" alt="">
+    </div>
+    <div style="width: 20%; float: left; border: 10px solid #fff;">
+      <img src="/assets/images/brand/google.png" alt="">
+    </div>
+    <div style="width: 20%; float: left; border: 10px solid #fff;">
+      <img src="/assets/images/brand/cmu.png" alt="">
+    </div>
+    <div style="width: 20%; float: left; border: 10px solid #fff;">
+      <img src="/assets/images/brand/udel.png" alt="">
+    </div>
+    <div style="width: 20%; float: left; border: 10px solid #fff;">
+      <img src="/assets/images/brand/apple.png" alt="">
+    </div>
+</div>

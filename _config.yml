@@ -89,14 +89,11 @@ author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
   avatar           : "/assets/images/ntmc.png"
   bio              : Everything could be matched.
-  location         : Beijing, China
+  location         : Worldwide
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://ntmc-community.github.io"
-    - label: "E-mail"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:matchzoocommunity@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/NTMC-Community"
@@ -108,9 +105,6 @@ footer:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://ntmc-community.github.io"
-    - label: "E-mail"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "matchzoocommunity@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/NTMC-Community"
