@@ -12,16 +12,16 @@ toc: true
 
 ## Classic Datasets
 
-| Dataset                                                                      | Domain      | #Question | #Answer |
-| ---------------------------------------------------------------------------- | ----------- | --------- | ------- |
-| [**TRECQA**](https://trec.nist.gov/data/qa.html)                             | Open-domain | 1,229     | 5,3417  |
+| Dataset                                                      | Domain      | #Question | #Answer |
+| ------------------------------------------------------------ | ----------- | --------- | ------- |
+| [**TRECQA**](https://trec.nist.gov/data/qa.html)             | Open-domain | 1,229     | 5,3417  |
 | [**WikiQA**](https://www.microsoft.com/en-us/download/details.aspx?id=52419) | Open-domain | 3,047     | 29,258  |
-| [**InsuranceQA**](https://github.com/shuzi/insuranceQA)                      | Insurance   | 12,889    | 21,325  |
-| [**FiQA**](https://sites.google.com/view/fiqa)                               | Financial   | 6,648     | 57,641  |
-| Yahoo! Answers                                                               | Open-domain | 50,112    | 253,440 |
-| SemEval-2015 Task 3                                                          | Open-domain | 2,600     | 16,541  |
-| SemEval-2016 Task 3                                                          | Open-domain | 4,879     | 36,198  |
-| SemEval-2017 Task 3                                                          | Open-domain | 4,879     | 36,198  |
+| [**InsuranceQA**](https://github.com/shuzi/insuranceQA)      | Insurance   | 12,889    | 21,325  |
+| [**FiQA**](https://sites.google.com/view/fiqa)               | Financial   | 6,648     | 57,641  |
+| [**Yahoo! Answers**](https://webscope.sandbox.yahoo.com)     | Open-domain | 50,112    | 253,440 |
+| [**SemEval-2015 Task 3**](http://alt.qcri.org/semeval2015/task3/) | Open-domain | 2,600     | 16,541  |
+| [**SemEval-2016 Task 3**](http://alt.qcri.org/semeval2016/task3/) | Open-domain | 4,879     | 36,198  |
+| [**SemEval-2017 Task 3**](http://alt.qcri.org/semeval2017/task3/) | Open-domain | 4,879     | 36,198  |
 
 - [**TRECQA**](https://trec.nist.gov/data/qa.html) dataset is created by [Wang et. al.](https://www.aclweb.org/anthology/D07-1003) from TREC QA track 8-13 data, with candidate answers automatically selected from each question’s document pool using a combination of overlapping non-stop word counts and pattern matching. This data set is one of the most widely used benchmarks for [answer sentence selection](<https://aclweb.org/aclwiki/Question_Answering_(State_of_the_art)>).
 

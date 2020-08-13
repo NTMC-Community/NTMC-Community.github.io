@@ -40,7 +40,7 @@ community:
 features:
   - title: "Production Ready"
     excerpt: "Transition seamlessly between eager and graph modes with TorchScript, and accelerate the path to production with TorchServe."
-  - title: "Distributed Training"
+  - title: "SOTA Models"
     excerpt: "Scalable distributed training and performance optimization in research and production is enabled by the torch.distributed backend."
   - title: "Text Matching Progress"
     excerpt: "A rich ecosystem of tools and libraries extends PyTorch and supports development in computer vision, NLP and more."
