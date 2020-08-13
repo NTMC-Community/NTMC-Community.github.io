@@ -87,9 +87,9 @@ following,
 | KNRM         | [![status MatchZoo]][matchzoo code KNRM]  [![status official]][official code KNRM] | —                   | [0.352][paper CEDR] | [0.409][paper CEDR]      | [End-to-End Neural Ad-hoc Ranking with Kernel Pooling, SIGIR 2017] |
 | CONV-KNRM    | [![status MatchZoo]][matchzoo code CONV-KNRM]                | —                   | —                   | [0.416][paper BertForIR] | [Convolutional Neural Networks for Soft-Matching N-Grams in Ad-hoc Search, WSDM 2018] |
 | Duet         | [![status MatchZoo]][matchzoo code Duet]  [![status official]][official code Duet] | —                   | —                   | —                        | [Learning to Match using Local and Distributed Representations of Text for Web Search, WWW 2017] |
-| Co-PACRR     | ![status not in plan]  [![status official]][official code Co-PACRR] | —                   | —                   | —                        | [Co-PACRR: A Context-Aware Neural IR Model for Ad-hoc Retrieval, WSDM 2018] |
-| DeepRank     | ![status not in plan]  [![status official]][official code DeepRank PyTorch] | —                   | —                   | —                        | [DeepRank: A New Deep Architecture for Relevance Ranking in Information Retrieval, CIKM 2017] |
-| HiNT         | ![status not in plan]  [![status official]][official code HiNT] | —                   | —                   | —                        | [Modeling Diverse Relevance Patterns in Ad-hoc Retrieval, SIGIR 2018] |
+| Co-PACRR     |   [![status official]][official code Co-PACRR] | —                   | —                   | —                        | [Co-PACRR: A Context-Aware Neural IR Model for Ad-hoc Retrieval, WSDM 2018] |
+| DeepRank     |   [![status official]][official code DeepRank PyTorch] | —                   | —                   | —                        | [DeepRank: A New Deep Architecture for Relevance Ranking in Information Retrieval, CIKM 2017] |
+| HiNT         |   [![status official]][official code HiNT] | —                   | —                   | —                        | [Modeling Diverse Relevance Patterns in Ad-hoc Retrieval, SIGIR 2018] |
 
 ### ClueWeb09-B
 
@@ -104,9 +104,9 @@ following,
 | KNRM         | [![status MatchZoo]][matchzoo code KNRM]  [![status official]][official code KNRM] | —                   | —                   | —                        | [End-to-End Neural Ad-hoc Ranking with Kernel Pooling, SIGIR 2017] |
 | CONV-KNRM    | [![status MatchZoo]][matchzoo code CONV-KNRM]                | —                   | —                   | [0.270][paper BertForIR] | [Convolutional Neural Networks for Soft-Matching N-Grams in Ad-hoc Search, WSDM 2018] |
 | Duet         | [![status MatchZoo]][matchzoo code Duet]  [![status official]][official code Duet] | —                   | —                   | —                        | [Learning to Match using Local and Distributed Representations of Text for Web Search, WWW 2017] |
-| Co-PACRR     | ![status not in plan]  [![status official]][official code Co-PACRR] | —                   | —                   | —                        | [Co-PACRR: A Context-Aware Neural IR Model for Ad-hoc Retrieval, WSDM 2018] |
-| DeepRank     | ![status not in plan]  [![status official]][official code DeepRank PyTorch] | —                   | —                   | —                        | [DeepRank: A New Deep Architecture for Relevance Ranking in Information Retrieval, CIKM 2017] |
-| HiNT         | ![status not in plan]  [![status official]][official code HiNT] | —                   | —                   | —                        | [Modeling Diverse Relevance Patterns in Ad-hoc Retrieval, SIGIR 2018] |
+| Co-PACRR     |   [![status official]][official code Co-PACRR] | —                   | —                   | —                        | [Co-PACRR: A Context-Aware Neural IR Model for Ad-hoc Retrieval, WSDM 2018] |
+| DeepRank     |   [![status official]][official code DeepRank PyTorch] | —                   | —                   | —                        | [DeepRank: A New Deep Architecture for Relevance Ranking in Information Retrieval, CIKM 2017] |
+| HiNT         |   [![status official]][official code HiNT] | —                   | —                   | —                        | [Modeling Diverse Relevance Patterns in Ad-hoc Retrieval, SIGIR 2018] |
 
 
 ### MS MARCO Passage
@@ -122,9 +122,9 @@ following,
 | KNRM         | [![status MatchZoo]][matchzoo code KNRM]  [![status official]][official code KNRM] | [0.235][paper MSMARCO eval] | [0.465][paper MSMARCO eval] | [0.288][paper MSMARCO eval] | [End-to-End Neural Ad-hoc Ranking with Kernel Pooling, SIGIR 2017] |
 | CONV-KNRM    | [![status MatchZoo]][matchzoo code CONV-KNRM]                | [0.277][paper MSMARCO eval] | [0.519][paper MSMARCO eval] | [0.332][paper MSMARCO eval] | [Convolutional Neural Networks for Soft-Matching N-Grams in Ad-hoc Search, WSDM 2018] |
 | Duet         | [![status MatchZoo]][matchzoo code Duet]  [![status official]][official code Duet] | [0.248][paper MSMARCO eval] | [0.468][paper MSMARCO eval] | [0.299][paper MSMARCO eval] | [Learning to Match using Local and Distributed Representations of Text for Web Search, WWW 2017] |
-| Co-PACRR     | ![status not in plan]  [![status official]][official code Co-PACRR] | [0.273][paper MSMARCO eval] | [0.514][paper MSMARCO eval] | [0.328][paper MSMARCO eval] | [Co-PACRR: A Context-Aware Neural IR Model for Ad-hoc Retrieval, WSDM 2018] |
-| DeepRank     | ![status not in plan]  [![status official]][official code DeepRank PyTorch] | —                           | —                           | —                           | [DeepRank: A New Deep Architecture for Relevance Ranking in Information Retrieval, CIKM 2017] |
-| HiNT         | ![status not in plan]  [![status official]][official code HiNT] | —                           | —                           | —                           | [Modeling Diverse Relevance Patterns in Ad-hoc Retrieval, SIGIR 2018] |
+| Co-PACRR     |   [![status official]][official code Co-PACRR] | [0.273][paper MSMARCO eval] | [0.514][paper MSMARCO eval] | [0.328][paper MSMARCO eval] | [Co-PACRR: A Context-Aware Neural IR Model for Ad-hoc Retrieval, WSDM 2018] |
+| DeepRank     |   [![status official]][official code DeepRank PyTorch] | —                           | —                           | —                           | [DeepRank: A New Deep Architecture for Relevance Ranking in Information Retrieval, CIKM 2017] |
+| HiNT         |   [![status official]][official code HiNT] | —                           | —                           | —                           | [Modeling Diverse Relevance Patterns in Ad-hoc Retrieval, SIGIR 2018] |
 
 
 ### MS MARCO Document
@@ -140,9 +140,9 @@ following,
 | KNRM         | [![status MatchZoo]][matchzoo code KNRM]  [![status official]][official code KNRM] | [0.261][paper MSMARCO eval] | [0.519][paper MSMARCO eval] | [0.323][paper MSMARCO eval] | [End-to-End Neural Ad-hoc Ranking with Kernel Pooling, SIGIR 2017] |
 | CONV-KNRM    | [![status MatchZoo]][matchzoo code CONV-KNRM]                | [0.283][paper MSMARCO eval] | [0.542][paper MSMARCO eval] | [0.345][paper MSMARCO eval] | [Convolutional Neural Networks for Soft-Matching N-Grams in Ad-hoc Search, WSDM 2018] |
 | Duet         | [![status MatchZoo]][matchzoo code Duet]  [![status official]][official code Duet] | [0.266][paper MSMARCO eval] | [0.520][paper MSMARCO eval] | [0.327][paper MSMARCO eval] | [Learning to Match using Local and Distributed Representations of Text for Web Search, WWW 2017] |
-| Co-PACRR     | ![status not in plan]  [![status official]][official code Co-PACRR] | [0.284][paper MSMARCO eval] | [0.543][paper MSMARCO eval] | [0.345][paper MSMARCO eval] | [Co-PACRR: A Context-Aware Neural IR Model for Ad-hoc Retrieval, WSDM 2018] |
-| DeepRank     | ![status not in plan]  [![status official]][official code DeepRank PyTorch] | —                           | —                           | —                           | [DeepRank: A New Deep Architecture for Relevance Ranking in Information Retrieval, CIKM 2017] |
-| HiNT         | ![status not in plan]  [![status official]][official code HiNT] | —                           | —                           | —                           | [Modeling Diverse Relevance Patterns in Ad-hoc Retrieval, SIGIR 2018] |
+| Co-PACRR     |   [![status official]][official code Co-PACRR] | [0.284][paper MSMARCO eval] | [0.543][paper MSMARCO eval] | [0.345][paper MSMARCO eval] | [Co-PACRR: A Context-Aware Neural IR Model for Ad-hoc Retrieval, WSDM 2018] |
+| DeepRank     |   [![status official]][official code DeepRank PyTorch] | —                           | —                           | —                           | [DeepRank: A New Deep Architecture for Relevance Ranking in Information Retrieval, CIKM 2017] |
+| HiNT         |   [![status official]][official code HiNT] | —                           | —                           | —                           | [Modeling Diverse Relevance Patterns in Ad-hoc Retrieval, SIGIR 2018] |
 
 
 ### MQ2007
@@ -158,9 +158,9 @@ following,
 | KNRM         | [![status MatchZoo]][matchzoo code KNRM]  [![status official]][official code KNRM] | —                       | —                       | —                       | [End-to-End Neural Ad-hoc Ranking with Kernel Pooling, SIGIR 2017] |
 | CONV-KNRM    | [![status MatchZoo]][matchzoo code CONV-KNRM]                | —                       | —                       | —                       | [Convolutional Neural Networks for Soft-Matching N-Grams in Ad-hoc Search, WSDM 2018] |
 | Duet         | [![status MatchZoo]][matchzoo code Duet]  [![status official]][official code Duet] | [0.474][paper HiNT]     | [0.398][paper HiNT]     | [0.453][paper HiNT]     | [Learning to Match using Local and Distributed Representations of Text for Web Search, WWW 2017] |
-| Co-PACRR     | ![status not in plan]  [![status official]][official code Co-PACRR] | —                       | —                       | —                       | [Co-PACRR: A Context-Aware Neural IR Model for Ad-hoc Retrieval, WSDM 2018] |
-| DeepRank     | ![status not in plan]  [![status official]][official code DeepRank PyTorch] | 0.497                   | 0.412                   | 0.482                   | [DeepRank: A New Deep Architecture for Relevance Ranking in Information Retrieval, CIKM 2017] |
-| HiNT         | ![status not in plan]  [![status official]][official code HiNT] | 0.502                   | 0.447                   | 0.490                   | [Modeling Diverse Relevance Patterns in Ad-hoc Retrieval, SIGIR 2018] |
+| Co-PACRR     |   [![status official]][official code Co-PACRR] | —                       | —                       | —                       | [Co-PACRR: A Context-Aware Neural IR Model for Ad-hoc Retrieval, WSDM 2018] |
+| DeepRank     |   [![status official]][official code DeepRank PyTorch] | 0.497                   | 0.412                   | 0.482                   | [DeepRank: A New Deep Architecture for Relevance Ranking in Information Retrieval, CIKM 2017] |
+| HiNT         |   [![status official]][official code HiNT] | 0.502                   | 0.447                   | 0.490                   | [Modeling Diverse Relevance Patterns in Ad-hoc Retrieval, SIGIR 2018] |
 
 ### MQ2008
 
@@ -175,9 +175,9 @@ following,
 | KNRM         | [![status MatchZoo]][matchzoo code KNRM]  [![status official]][official code KNRM] | —                       | —                       | —                       | [End-to-End Neural Ad-hoc Ranking with Kernel Pooling, SIGIR 2017] |
 | CONV-KNRM    | [![status MatchZoo]][matchzoo code CONV-KNRM]                | —                       | —                       | —                       | [Convolutional Neural Networks for Soft-Matching N-Grams in Ad-hoc Search, WSDM 2018] |
 | Duet         | [![status MatchZoo]][matchzoo code Duet]  [![status official]][official code Duet] | [0.476][paper HiNT]     | [0.240][paper HiNT]     | [0.216][paper HiNT]     | [Learning to Match using Local and Distributed Representations of Text for Web Search, WWW 2017] |
-| Co-PACRR     | ![status not in plan]  [![status official]][official code Co-PACRR] | —                       | —                       | —                       | [Co-PACRR: A Context-Aware Neural IR Model for Ad-hoc Retrieval, WSDM 2018] |
-| DeepRank     | ![status not in plan]  [![status official]][official code DeepRank PyTorch] | 0.498                   | 0.252                   | 0.240                   | [DeepRank: A New Deep Architecture for Relevance Ranking in Information Retrieval, CIKM 2017] |
-| HiNT         | ![status not in plan]  [![status official]][official code HiNT] | 0.505                   | 0.255                   | 0.244                   | [Modeling Diverse Relevance Patterns in Ad-hoc Retrieval, SIGIR 2018] |
+| Co-PACRR     |   [![status official]][official code Co-PACRR] | —                       | —                       | —                       | [Co-PACRR: A Context-Aware Neural IR Model for Ad-hoc Retrieval, WSDM 2018] |
+| DeepRank     |   [![status official]][official code DeepRank PyTorch] | 0.498                   | 0.252                   | 0.240                   | [DeepRank: A New Deep Architecture for Relevance Ranking in Information Retrieval, CIKM 2017] |
+| HiNT         |   [![status official]][official code HiNT] | 0.505                   | 0.255                   | 0.244                   | [Modeling Diverse Relevance Patterns in Ad-hoc Retrieval, SIGIR 2018] |
 
 
 [status MatchZoo]: https://img.shields.io/badge/matchzoo-ready-green
