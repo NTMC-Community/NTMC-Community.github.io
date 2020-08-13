@@ -14,12 +14,32 @@ Some benchmark datasets are listed in the following.
 
 ## Classic Datasets
 
-|  Dataset    | pairs of sentence |
-|  ----  | ----  |
-|  [**MRPC**](https://www.microsoft.com/en-us/download/details.aspx?id=52398&from=http%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fdownloads%2F607d14d9-20cd-47e3-85bc-a2f65cd28042%2Fdefault.aspx)  | 5800  |
-|  STS  | 1750 |
-| SICK-R | 9840 |
-| SICK-E | 9840 |
+<table style="width: 300px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th>Dataset</th>
+<th>pairs of sentence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.microsoft.com/en-us/download/details.aspx?id=52398&amp;from=http%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fdownloads%2F607d14d9-20cd-47e3-85bc-a2f65cd28042%2Fdefault.aspx"><strong>MRPC</strong></a></td>
+<td>5800</td>
+</tr>
+<tr>
+<td>STS</td>
+<td>1750</td>
+</tr>
+<tr>
+<td>SICK-R</td>
+<td>9840</td>
+</tr>
+<tr>
+<td>SICK-E</td>
+<td>9840</td>
+</tr>
+</tbody>
+</table>
 
 - [**MRPC**](https://www.microsoft.com/en-us/download/details.aspx?id=52398&from=http%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fdownloads%2F607d14d9-20cd-47e3-85bc-a2f65cd28042%2Fdefault.aspx) is short for Microsoft Research Paraphrase Corpus. It contains 5,800 pairs of sentences which have been extracted from news sources on the web, along with human annotations indicating whether each pair captures a paraphrase/semantic equivalence relationship.
 - [**SentEval**](https://arxiv.org/pdf/1803.05449.pdf) encompasses semantic relatedness datasets including

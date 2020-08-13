@@ -15,14 +15,54 @@ following,
 
 ## Classic Datasets
 
-| Dataset                                                      | Genre      | #Query  | #Collections |
-| :----------------------------------------------------------- | :--------- | :------ | :----------- |
-| [**Robust04**](https://trec.nist.gov/data/t13_robust.html)   | news       | 250     | 0.5M         |
-| [**ClueWeb09-Cat-B**](https://trec.nist.gov/data/webmain.html) | web        | 150     | 50M          |
-| [**Gov2**](https://trec.nist.gov/data/terabyte.html)         | .gov pages | 150     | 25M          |
-| [**MS MARCO**](http://www.msmarco.org/dataset.aspx)          | web pages  | 367,013 | 3.2M         |
-| MQ2007                                                       | .gov pages | 1692    | 25M          |
-| MQ2008                                                       | .gov pages | 794     | 25M          |
+<table style="width: 500px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th align="left">Dataset</th>
+<th align="left">Genre</th>
+<th align="left">#Query</th>
+<th align="left">#Collections</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://trec.nist.gov/data/t13_robust.html"><strong>Robust04</strong></a></td>
+<td align="left">news</td>
+<td align="left">250</td>
+<td align="left">0.5M</td>
+</tr>
+<tr>
+<td align="left"><a href="https://trec.nist.gov/data/webmain.html"><strong>ClueWeb09-Cat-B</strong></a></td>
+<td align="left">web</td>
+<td align="left">150</td>
+<td align="left">50M</td>
+</tr>
+<tr>
+<td align="left"><a href="https://trec.nist.gov/data/terabyte.html"><strong>Gov2</strong></a></td>
+<td align="left">.gov pages</td>
+<td align="left">150</td>
+<td align="left">25M</td>
+</tr>
+<tr>
+<td align="left"><a href="http://www.msmarco.org/dataset.aspx"><strong>MS MARCO</strong></a></td>
+<td align="left">web pages</td>
+<td align="left">367,013</td>
+<td align="left">3.2M</td>
+</tr>
+<tr>
+<td align="left">MQ2007</td>
+<td align="left">.gov pages</td>
+<td align="left">1692</td>
+<td align="left">25M</td>
+</tr>
+<tr>
+<td align="left">MQ2008</td>
+<td align="left">.gov pages</td>
+<td align="left">794</td>
+<td align="left">25M</td>
+</tr>
+</tbody>
+</table>
 
 * [**Robust04**](https://trec.nist.gov/data/t13_robust.html) is a small news dataset which contains about 0.5 million documents in total. The queries are collected from TREC Robust Track 2004. There are 250 queries in total.
   

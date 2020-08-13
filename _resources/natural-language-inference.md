@@ -12,11 +12,28 @@ toc: true
 
 ## Classic Datasets
 
-| Dataset                                                      | # sentence pair |
-| ------------------------------------------- | ----- |
-| [**SNLI**](https://arxiv.org/abs/1508.05326)                 | 570K            |
-| [**MultiNLI**](https://arxiv.org/abs/1704.05426)             | 433K            |
-| [**SciTail**](http://ai2-website.s3.amazonaws.com/publications/scitail-aaai-2018_cameraready.pdf) | 27K             |
+<table  style="width: 300px; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th>Dataset</th>
+<th># sentence pair</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://arxiv.org/abs/1508.05326"><strong>SNLI</strong></a></td>
+<td>570K</td>
+</tr>
+<tr>
+<td><a href="https://arxiv.org/abs/1704.05426"><strong>MultiNLI</strong></a></td>
+<td>433K</td>
+</tr>
+<tr>
+<td><a href="http://ai2-website.s3.amazonaws.com/publications/scitail-aaai-2018_cameraready.pdf"><strong>SciTail</strong></a></td>
+<td>27K</td>
+</tr>
+</tbody>
+</table>
 
 - [**SNLI**](https://arxiv.org/abs/1508.05326) is the short of Stanford Natural Language Inference, which has 570k human annotated sentence pairs. Thre premise data is draw from the captions of the Flickr30k corpus, and the hypothesis data is manually composed.
 - [**MultiNLI**](https://arxiv.org/abs/1704.05426) is short of Multi-Genre NLI, which has 433k sentence pairs, whose collection process and task detail are modeled closely to SNLI. The premise data is collected from maximally broad range of genre of American English such as non-fiction genres (SLATE, OUP, GOVERNMENT, VERBATIM, TRAVEL), spoken genres (TELEPHONE, FACE-TO-FACE), less formal written genres (FICTION, LETTERS) and a specialized one for 9/11.
