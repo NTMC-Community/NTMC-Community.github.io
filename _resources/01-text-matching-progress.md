@@ -34,7 +34,7 @@ Where $s$ and $t$ are source text input and target text input, respectively. The
 <td align="center">question/answer</td>
 </tr>
 <tr>
-<td align="center"><a href="/resources/paraphrase-identification/">Paraphrase Indentification</a></td>
+<td align="center"><a href="/resources/paraphrase-identification/">Paraphrase Identification</a></td>
 <td align="center">string1</td>
 <td align="center">string2</td>
 </tr>
