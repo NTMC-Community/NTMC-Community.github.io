@@ -45,7 +45,7 @@ Where $s$ and $t$ are source text input and target text input, respectively. The
 </tr>
 <tr>
 <td align="center"><a href="/resources/response-retrieval/">Response Retrieval</a></td>
-<td align="center">response</td>
+<td align="center">context/utterances</td>
 <td align="center">response</td>
 </tr>
 </tbody>
