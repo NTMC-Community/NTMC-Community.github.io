@@ -15,12 +15,12 @@ $$f(s, t)=g(\psi(s), \phi(t), \eta(s, t))$$
 Where $s$ and $t$ are source text input and target text input, respectively. The $\psi$ and $\phi$ are representation function for input $s$ and $t$, respectively. The $\eta$ is the interaction function, and $g$ is the aggregation function. More detailed explaination about this formula can be found on [A Deep Look into Neural Ranking Models for Information Retrieval](https://arxiv.org/abs/1903.06902). The representative matching tasks are as follows:
 
 <table style="width: 600px; margin-left: auto; margin-right: auto;">
-<thead>
-<tr>
-<th align="center"><strong>Tasks</strong></th>
-<th align="center"><strong>Source Text</strong></th>
-<th align="center"><strong>Target Text</strong></th>
-</tr>
+  <thead>
+    <tr>
+      <th align="center"><strong>Tasks</strong></th>
+      <th align="center"><strong>Source Text</strong></th>
+      <th align="center"><strong>Target Text</strong></th>
+    </tr>
 </thead>
 <tbody>
 <tr>
