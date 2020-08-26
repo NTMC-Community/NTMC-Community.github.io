@@ -55,7 +55,7 @@ features:
 
 ## COMPANIES & UNIVERSITIES USING MATCHZOO
 
-<div style="width: 80%; margin: 0 auto; height: 150px;">
+<div style="width: 80%; margin: 0 auto; height: auto;">
     <div style="width: 20%; float: left; border: 10px solid #fff;">
       <img src="/assets/images/brand/microsoft.png" alt="">
     </div>
@@ -72,7 +72,7 @@ features:
       <img src="/assets/images/brand/stanford.png" alt="">
     </div>
 </div>
-<div style="width: 80%; margin: 0 auto; height: 150px;">
+<div style="width: 80%; margin: 0 auto; height: auto;">
     <div style="width: 20%; float: left; border: 10px solid #fff;">
       <img src="/assets/images/brand/facebook.png" alt="">
     </div>
