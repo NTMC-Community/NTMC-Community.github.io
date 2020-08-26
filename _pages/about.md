@@ -8,7 +8,7 @@ author_profile: true
 ---
 
 <div align='center'>
-<img src="https://github.com/NTMC-Community/MatchZoo-py/blob/master/artworks/matchzoo-logo.png?raw=true" width = "400"  alt="logo" align="center" />
+  <img src="/assets/images/matchzoo-logo.png?raw=true" width = "400"  alt="logo" align="center" />
 </div>
 > Facilitating the design, comparison and sharing of deep text matching models.
 >
