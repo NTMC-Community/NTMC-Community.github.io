@@ -2,7 +2,7 @@
 title: "Natural Language Inference"
 permalink: /resources/natural-language-inference/
 excerpt: "determining whether a hypothesis is true (entailment), false (contradiction), or undetermined (neutral) given a premise."
-last_modified_at: 2020-08-11
+last_modified_at: 2020-09-02
 redirect_from:
  —/theme-setup/
 toc: true
@@ -12,27 +12,27 @@ toc: true
 
 ## Classic Datasets
 
-<table  style="width: 300px; margin-left: auto; margin-right: auto;">
-<thead>
-<tr>
-<th>Dataset</th>
-<th># sentence pair</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://arxiv.org/abs/1508.05326"><strong>SNLI</strong></a></td>
-<td>570K</td>
-</tr>
-<tr>
-<td><a href="https://arxiv.org/abs/1704.05426"><strong>MultiNLI</strong></a></td>
-<td>433K</td>
-</tr>
-<tr>
-<td><a href="http://ai2-website.s3.amazonaws.com/publications/scitail-aaai-2018_cameraready.pdf"><strong>SciTail</strong></a></td>
-<td>27K</td>
-</tr>
-</tbody>
+<table style="width: 300px; margin-left: auto; margin-right: auto;">
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th># sentence pair</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://arxiv.org/abs/1508.05326"><strong>SNLI</strong></a></td>
+      <td>570K</td>
+    </tr>
+    <tr>
+      <td><a href="https://arxiv.org/abs/1704.05426"><strong>MultiNLI</strong></a></td>
+      <td>433K</td>
+    </tr>
+    <tr>
+      <td><a href="http://ai2-website.s3.amazonaws.com/publications/scitail-aaai-2018_cameraready.pdf"><strong>SciTail</strong></a></td>
+      <td>27K</td>
+    </tr>
+  </tbody>
 </table>
 
 - [**SNLI**](https://arxiv.org/abs/1508.05326) is the short of Stanford Natural Language Inference, which has 570k human annotated sentence pairs. Thre premise data is draw from the captions of the Flickr30k corpus, and the hypothesis data is manually composed.

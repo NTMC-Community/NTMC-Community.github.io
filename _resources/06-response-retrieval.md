@@ -2,7 +2,7 @@
 title: "Response Retrieval"
 permalink: /resources/response-retrieval/
 excerpt: "Rank/Select a proper response from a dialog repository."
-last_modified_at: 2020-08-12
+last_modified_at: 2020-09-02
 redirect_from:
   - /theme-setup/
 toc: true
@@ -12,8 +12,6 @@ toc: true
 Automatic conversation (AC) aims to create an automatic human-computer dialog process for the purpose of question answering, task completion, and social chat (i.e., chit-chat). In general, AC could be formulated either as an IR problem that aims to rank/select a proper response from a dialog repository or a generation problem that aims to generate an appropriate response with respect to the input utterance. Here, we refer response retrieval as the IR-based way to do AC.
 Example:
 ![](https://codimd.s3.shivering-isles.com/demo/uploads/upload_8b357e5358f6a9398092d46ccfeb619a.png)
-
-
 
 ## Classic Datasets
 

@@ -2,7 +2,7 @@
 title: "Ad-hoc Information Retrieval"
 permalink: /resources/ad-hoc-information-retrieval/
 excerpt: "Obtain information system resources relevant to an information need from a collection."
-last_modified_at: 2020-08-12
+last_modified_at: 2020-09-02
 redirect_from:
   - /theme-setup/
 toc: true

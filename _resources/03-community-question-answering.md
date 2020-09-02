@@ -2,7 +2,7 @@
 title: "Community Question Answering"
 permalink: /resources/community-question-answering/
 excerpt: "Automatically search for relevant answers among many responses provided for a given question."
-last_modified_at: 2020-08-11
+last_modified_at: 2020-09-02
 redirect_from:
   - /theme-setup/
 toc: true
@@ -13,64 +13,64 @@ toc: true
 ## Classic Datasets
 
 <table style="width: 500px; margin-left: auto; margin-right: auto;">
-<thead>
-<tr>
-<th>Dataset</th>
-<th>Domain</th>
-<th>#Question</th>
-<th>#Answer</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://trec.nist.gov/data/qa.html"><strong>TRECQA</strong></a></td>
-<td>Open-domain</td>
-<td>1,229</td>
-<td>5,3417</td>
-</tr>
-<tr>
-<td><a href="https://www.microsoft.com/en-us/download/details.aspx?id=52419"><strong>WikiQA</strong></a></td>
-<td>Open-domain</td>
-<td>3,047</td>
-<td>29,258</td>
-</tr>
-<tr>
-<td><a href="https://github.com/shuzi/insuranceQA"><strong>InsuranceQA</strong></a></td>
-<td>Insurance</td>
-<td>12,889</td>
-<td>21,325</td>
-</tr>
-<tr>
-<td><a href="https://sites.google.com/view/fiqa"><strong>FiQA</strong></a></td>
-<td>Financial</td>
-<td>6,648</td>
-<td>57,641</td>
-</tr>
-<tr>
-<td><a href="https://webscope.sandbox.yahoo.com"><strong>Yahoo! Answers</strong></a></td>
-<td>Open-domain</td>
-<td>50,112</td>
-<td>253,440</td>
-</tr>
-<tr>
-<td><a href="http://alt.qcri.org/semeval2015/task3/"><strong>SemEval-2015 Task 3</strong></a></td>
-<td>Open-domain</td>
-<td>2,600</td>
-<td>16,541</td>
-</tr>
-<tr>
-<td><a href="http://alt.qcri.org/semeval2016/task3/"><strong>SemEval-2016 Task 3</strong></a></td>
-<td>Open-domain</td>
-<td>4,879</td>
-<td>36,198</td>
-</tr>
-<tr>
-<td><a href="http://alt.qcri.org/semeval2017/task3/"><strong>SemEval-2017 Task 3</strong></a></td>
-<td>Open-domain</td>
-<td>4,879</td>
-<td>36,198</td>
-</tr>
-</tbody>
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th>Domain</th>
+      <th>#Question</th>
+      <th>#Answer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://trec.nist.gov/data/qa.html"><strong>TRECQA</strong></a></td>
+      <td>Open-domain</td>
+      <td>1,229</td>
+      <td>5,3417</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.microsoft.com/en-us/download/details.aspx?id=52419"><strong>WikiQA</strong></a></td>
+      <td>Open-domain</td>
+      <td>3,047</td>
+      <td>29,258</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/shuzi/insuranceQA"><strong>InsuranceQA</strong></a></td>
+      <td>Insurance</td>
+      <td>12,889</td>
+      <td>21,325</td>
+    </tr>
+    <tr>
+      <td><a href="https://sites.google.com/view/fiqa"><strong>FiQA</strong></a></td>
+      <td>Financial</td>
+      <td>6,648</td>
+      <td>57,641</td>
+    </tr>
+    <tr>
+      <td><a href="https://webscope.sandbox.yahoo.com"><strong>Yahoo! Answers</strong></a></td>
+      <td>Open-domain</td>
+      <td>50,112</td>
+      <td>253,440</td>
+    </tr>
+    <tr>
+      <td><a href="http://alt.qcri.org/semeval2015/task3/"><strong>SemEval-2015 Task 3</strong></a></td>
+      <td>Open-domain</td>
+      <td>2,600</td>
+      <td>16,541</td>
+    </tr>
+    <tr>
+      <td><a href="http://alt.qcri.org/semeval2016/task3/"><strong>SemEval-2016 Task 3</strong></a></td>
+      <td>Open-domain</td>
+      <td>4,879</td>
+      <td>36,198</td>
+    </tr>
+    <tr>
+      <td><a href="http://alt.qcri.org/semeval2017/task3/"><strong>SemEval-2017 Task 3</strong></a></td>
+      <td>Open-domain</td>
+      <td>4,879</td>
+      <td>36,198</td>
+    </tr>
+  </tbody>
 </table>
 
 - [**TRECQA**](https://trec.nist.gov/data/qa.html) dataset is created by [Wang et. al.](https://www.aclweb.org/anthology/D07-1003) from TREC QA track 8-13 data, with candidate answers automatically selected from each question’s document pool using a combination of overlapping non-stop word counts and pattern matching. This data set is one of the most widely used benchmarks for [answer sentence selection](<https://aclweb.org/aclwiki/Question_Answering_(State_of_the_art)>).

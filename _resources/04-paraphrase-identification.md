@@ -2,13 +2,19 @@
 title: "Paraphrase Identification"
 permalink: /resources/paraphrase-identification/
 excerpt: "Determine whether two sentences have the same meaning, a problem considered a touchstone of natural language understanding."
-last_modified_at: 2020-08-11
+last_modified_at: 2020-09-02
 redirect_from:
   - /theme-setup/
 toc: true
 ---
 
 **Paraphrase Identification** is an task to determine whether two sentences have the same meaning, a problem considered a touchstone of natural language understanding.
+
+Take an instance in MRPC dataset for example, this is a pair of sentences with the same meaning:
+
+sentence1: Amrozi accused his brother, whom he called "the witness", of deliberately distorting his evidence.
+
+sentence2: Referring to him as only "the witness", Amrozi accused his brother of deliberately distorting his evidence.
 
 Some benchmark datasets are listed in the following.
 
