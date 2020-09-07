@@ -12,7 +12,7 @@ toc: true
 
 ## Classic Datasets
 
-<table style="width: 300px; margin-left: auto; margin-right: auto;">
+<table style="width: 20em; margin-left: auto; margin-right: auto;">
   <thead>
     <tr>
       <th>Dataset</th>

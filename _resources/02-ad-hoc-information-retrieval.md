@@ -15,7 +15,7 @@ following,
 
 ## Classic Datasets
 
-<table style="width: 600px; margin-left: auto; margin-right: auto;">
+<table style="width: 40em; margin-left: auto; margin-right: auto;">
   <thead>
     <tr>
       <th align="left">Dataset</th>

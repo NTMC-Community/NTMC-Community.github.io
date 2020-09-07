@@ -7,7 +7,7 @@ main:
   - title: "Resources"
     url: /resources/text-matching-progress/
   - title: "Docs"
-    url: https://matchzoo.readthedocs.io/en/master/
+    url: https://matchzoo-py.readthedocs.io/en/latest/
   - title: "About"
     url: /about/
 

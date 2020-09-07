@@ -20,7 +20,7 @@ Some benchmark datasets are listed in the following.
 
 ## Classic Datasets
 
-<table style="width: 400px; margin-left: auto; margin-right: auto;">
+<table style="width: 25em; margin-left: auto; margin-right: auto;">
   <thead>
     <tr>
       <th>Dataset</th>
