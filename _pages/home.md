@@ -26,7 +26,7 @@ community:
     alt: "documentation"
     title: "Documentation"
     excerpt: "MatchZoo documentation includes API and model reference."
-    url: "https://matchzoo.readthedocs.io/en/master/"
+    url: "https://matchzoo-py.readthedocs.io/en/latest/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/images/community/resources.png
