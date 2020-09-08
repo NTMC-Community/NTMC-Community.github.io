@@ -50,10 +50,10 @@ features:
 <h2>KEY FEATURES & CAPABILITIES</h2>
 {% include feature_row id="features"%}
 
-## COMMUNITY
+<h2>COMMUNITY</h2>
 {% include feature_row id="community"%}
 
-## COMPANIES & UNIVERSITIES USING MATCHZOO
+<h2>COMPANIES & UNIVERSITIES USING MATCHZOO</h2>
 
 <div style="width: 80%; margin: 0 auto; height: auto;">
     <div style="width: 20%; float: left; border: 10px solid #fff;">
