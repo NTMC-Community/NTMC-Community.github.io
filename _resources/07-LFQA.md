@@ -30,7 +30,9 @@ Example:
 
 |Dataset | #QA pairs | Avg#docs/question | Avg#Words/question |Avg#Words/answer|Quoted|
 |---- | ---- | ---- |---- | ---- | ---- |
-|[**ELI5**](#eli5dataset)| 272K||857.6|130.6|No|
+|[**ELI5**](#eli5dataset)| 272K|-|857.6|130.6|No|
+|[**WikiHowNFQA**](#wikihowdataset)| 11746|-|-|113.05|No|
+
 
 - **[ELI5](https://github.com/facebookresearch/ELI5):** The dataset is released by Meta, where the original paper is in [link](https://arxiv.org/pdf/1907.09190.pdf). It is the first large-scale corpus for long-form question answering, a task requiring elaborate and in-depth answers to openended questions. The dataset comprises 270K threads from the Reddit forum “Explain Like I’m Five” (ELI5) where an online community provides answers to questions which are comprehensible by five year olds. Compared to existing datasets, ELI5 comprises diverse questions requiring multi-sentence answers. Sample:
 ```
@@ -38,6 +40,17 @@ Example:
 [Documents]: [...] Jellyﬁsh do not have brains, and most barely have nervous systems. They have primitive nerve cells that help them orient themselves in the water and sense light and touch. [...] While they dont possess brains, the animals still have neurons that send all sorts of signals throughout their body. [...] They may accomplish this through the assistance of their nerve rings. Jellyﬁsh don’t have brains, and that’s just where things begin. They don’t have many of the body parts that are typical in other animals. [...] (1070 words)
 [Answer]: Jellyﬁsh may not have a brain, but they have a rough nervous system and innate behaviours. However, they are very simple creatures. They’re invertebrate: creatures without a backbone. Most jellyﬁsh have really short life spans. Sometimes just a couple of hours. [...] As their name im-plies, they are largely composed of basically jelly inside a thin membrane. They’re over 95% water. (327 words)
 ```
+
+- **[WikiHowNFQA](https://lurunchik.github.io/WikiHowNFQA/#home):** The WikiHowNFQA dataset is derived from WikiHow, a popular online platform that provides how-to guides on a wide range of topics. The dataset is structured to include a question, a set of related documents, and a human-authored answer. The questions are non-factoid, requiring comprehensive, multi-sentence answers. The related documents provide the necessary information to generate an answer. Sample:
+```
+[Question]: How To Seal Concrete Floors?
+[Documents]: 
+	- [1] Title: "Make Your Garage Floor Last — The Family Handyman"; URL: "https://www.familyhandyman.com/garage/make-your-garage-floor-last-with-concrete-sealer/view-all"; PASSAGE: "Sealing your concrete garage floor is the best way to prevent damage from road salt and freezing temperatures. With so many concrete sealing/waterproofing products on the market, choosing the right product can be confusing."
+	- [2] Title: "Clean Garage Floors – Remove Oil Stains From Concrete"; URL: "https://www.familyhandyman.com/garage/clean-garage-floors-remove-oil-stains-from-concrete/view-all/""; PASSAGE: "Oil and grease stains don’t just make a garage floor look bad- they can also cause falls, ruin your shoes and get tracked into the house. And if you want to finish your floor with a coating, it’s essential to get rid of oil deposits for a good bond. Solvent-based remedies are harmful to the environment and can damage the concrete surface. Cat litter, sawdust and other absorbent materials remove standing oil but do nothing about the oily stain left behind. Commercial and household detergents require a lot of scrubbing and can leave behind residue or discolor the concrete. Here are two product that actually work."    
+	- ...                
+[Answer]:  To seal concrete floors, use an epoxy sealer if you want something durable that comes in a variety of colors. For indoor concrete floors that won't be exposed to oil or grease, use an acrylic sealer, which is easy to apply. If you want to seal over concrete floors that already have a seal, try a polyurethane sealer. To seal concrete floors without changing their appearance, you can use a silane or siloxane sealer, which won't alter the color or finish of the floors.
+```
+
 
 ## Performance
 
@@ -48,6 +61,14 @@ Example:
 | Model   | Code|PPL|ROUGE-1|ROUGE-2|ROUGE-L|Paper| type |
 |  ----  | ----  |  ----  | --- | --- | --- | --- | ----  | ----  |
 | Seq2Seq Multi-task (Fan et al. 2019)| N/A | 32.7 | 28.9 | 5.4 | 23.1 |  [ELI5: Long Form Question Answering](https://arxiv.org/pdf/1907.09190.pdf) | abstractive |
+
+
+
+### [WikiHowNFQA dataset](https://lurunchik.github.io/WikiHowNFQA/#home) <a name="wikihowdataset"></a>
+
+| Model   | Code|BertScore|ROUGE-1|ROUGE-2|ROUGE-L|Paper| type |
+|  ----  | ----  |  ----  | --- | --- | --- | --- | ----  | ----  |
+| DPR + text-davinci-003 (Bolotova et al. 2023)| N/A | 0.868 | 35.4 | 9.2 | 20.2 |  [WikiHowQA: A Comprehensive Benchmark for Multi-Document Non-Factoid Question Answering](https://arxiv.org/pdf/1907.09190.pdf) | generative |
 
 
 
