@@ -48,6 +48,11 @@ Where $s$ and $t$ are source text input and target text input, respectively. The
       <td align="center">context/utterances</td>
       <td align="center">response</td>
     </tr>
+	<tr>
+      <td align="center"><a href="/resources/LFQA/">Long Form Question Answering</a></td>
+      <td align="center">question&document</td>
+      <td align="center">answer</td>
+    </tr>
   </tbody>
 </table>
 
