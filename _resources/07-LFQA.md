@@ -28,17 +28,15 @@ Example:
 
 ## Classic Datasets
 
-|Dataset | #Q-A pairs | Avg#docs/question | Avg#Words/question |Avg#Words/answer|Quoted|
+|Dataset | #QA pairs | Avg#docs/question | Avg#Words/question |Avg#Words/answer|Quoted|
 |---- | ---- | ---- |---- | ---- | ---- |
 |[**ELI5**](#eli5dataset)| 272K||857.6|130.6|No|
 
-**ELI5:** The dataset is released by Meta, where the original paper is in [link](https://arxiv.org/pdf/1907.09190.pdf). It is the first large-scale corpus for long-form question answering, a task requiring elaborate and in-depth answers to openended questions. The dataset comprises 270K threads from the Reddit forum “Explain Like I’m Five” (ELI5) where an online community provides answers to questions which are comprehensible by five year olds. Compared to existing datasets, ELI5 comprises diverse questions requiring multi-sentence answers. 
-
-Sample:
+- **[ELI5](https://github.com/facebookresearch/ELI5):** The dataset is released by Meta, where the original paper is in [link](https://arxiv.org/pdf/1907.09190.pdf). It is the first large-scale corpus for long-form question answering, a task requiring elaborate and in-depth answers to openended questions. The dataset comprises 270K threads from the Reddit forum “Explain Like I’m Five” (ELI5) where an online community provides answers to questions which are comprehensible by five year olds. Compared to existing datasets, ELI5 comprises diverse questions requiring multi-sentence answers. Sample:
 ```
-[Question]:
-[Passage]:
-[Answer]: 
+[Question]:How do Jellyﬁsh function without brains or nervous systems? [...] (60 words)
+[Documents]: [...] Jellyﬁsh do not have brains, and most barely have nervous systems. They have primitive nerve cells that help them orient themselves in the water and sense light and touch. [...] While they dont possess brains, the animals still have neurons that send all sorts of signals throughout their body. [...] They may accomplish this through the assistance of their nerve rings. Jellyﬁsh don’t have brains, and that’s just where things begin. They don’t have many of the body parts that are typical in other animals. [...] (1070 words)
+[Answer]: Jellyﬁsh may not have a brain, but they have a rough nervous system and innate behaviours. However, they are very simple creatures. They’re invertebrate: creatures without a backbone. Most jellyﬁsh have really short life spans. Sometimes just a couple of hours. [...] As their name im-plies, they are largely composed of basically jelly inside a thin membrane. They’re over 95% water. (327 words)
 ```
 
 ## Performance
@@ -47,9 +45,9 @@ Sample:
 
 
 
-| Model   | Code|MAP|$R_2@1$|$R_{10}@1$|$R_{10}@2$|$R_{10}@5$|Paper| type |
+| Model   | Code|PPL|ROUGE-1|ROUGE-2|ROUGE-L|Paper| type |
 |  ----  | ----  |  ----  | --- | --- | --- | --- | ----  | ----  |
-| Multi-View (Zhou et al. 2016)| N/A | — | 0.908 | 0.662 | 0.801 | 0.951 |  [Multi-view Response Selection for Human-Computer Conversation](https://www.aclweb.org/anthology/D16-1036.pdf) | multi-turn |
+| Seq2Seq Multi-task (Fan et al. 2019)| N/A | 32.7 | 28.9 | 5.4 | 23.1 |  [ELI5: Long Form Question Answering](https://arxiv.org/pdf/1907.09190.pdf) | abstractive |
 
 
 
