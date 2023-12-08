@@ -30,12 +30,22 @@ Example:
 
 |Dataset | #Q-A pairs | Avg#docs/question | Avg#Words/question |Avg#Words/answer|Quoted|
 |---- | ---- | ---- |---- | ---- | ---- |
-|[**ELI5**](https://github.com/facebookresearch/ELI5)| 272K||857.6|130.6|No|
+|[**ELI5**](#eli5dataset)| 272K||857.6|130.6|No|
 
+**ELI5:** The dataset is released by Meta, where the original paper is in [link](https://arxiv.org/pdf/1907.09190.pdf). It is the first large-scale corpus for long-form question answering, a task requiring elaborate and in-depth answers to openended questions. The dataset comprises 270K threads from the Reddit forum “Explain Like I’m Five” (ELI5) where an online community provides answers to questions which are comprehensible by five year olds. Compared to existing datasets, ELI5 comprises diverse questions requiring multi-sentence answers. 
+
+Sample:
+```
+[Question]:
+[Passage]:
+[Answer]: 
+```
 
 ## Performance
 
-### ELI5 dataset
+### [ELI5 dataset](https://github.com/facebookresearch/ELI5) <a name="eli5dataset"></a>
+
+
 
 | Model   | Code|MAP|$R_2@1$|$R_{10}@1$|$R_{10}@2$|$R_{10}@5$|Paper| type |
 |  ----  | ----  |  ----  | --- | --- | --- | --- | ----  | ----  |
