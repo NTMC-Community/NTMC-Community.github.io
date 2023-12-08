@@ -53,6 +53,8 @@ resources:
         url: /resources/natural-language-inference/
       - title: "Response Retrieval"
         url: /resources/response-retrieval/
+      - title: "Long Form Question Answering"
+        url: /resources/LFQA/
 
 # documentation links
 docs:
