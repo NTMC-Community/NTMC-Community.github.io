@@ -72,7 +72,7 @@ Example:
 
 
 | Model   | Code|PPL|ROUGE-1|ROUGE-2|ROUGE-L|Paper| type |
-|  ----  | ----  |  ----  | --- | --- | --- | --- | ----  | ----  |
+|  ----  | ----  | --- | --- | --- | --- | ----  | ----  |
 | Seq2Seq Multi-task (Fan et al. 2019)| N/A | 32.7 | 28.9 | 5.4 | 23.1 |  [ELI5: Long Form Question Answering](https://arxiv.org/pdf/1907.09190.pdf) | abstractive |
 
 
@@ -80,7 +80,7 @@ Example:
 ### [WikiHowNFQA dataset](https://lurunchik.github.io/WikiHowNFQA/#home) <a name="wikihowdataset"></a>
 
 | Model   | Code|BertScore|ROUGE-1|ROUGE-2|ROUGE-L|Paper| type |
-|  ----  | ----  |  ----  | --- | --- | --- | --- | ----  | ----  |
+|  ----  | ----  | --- | --- | --- | --- | ----  | ----  |
 | DPR + text-davinci-003 (Bolotova et al. 2023)| N/A | 0.868 | 35.4 | 9.2 | 20.2 |  [WikiHowQA: A Comprehensive Benchmark for Multi-Document Non-Factoid Question Answering](https://arxiv.org/pdf/1907.09190.pdf) | generative |
 
 
