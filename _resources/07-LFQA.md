@@ -35,6 +35,7 @@ Example:
 |[**WebCPM**](#webcpmdataset)| 5500|2.795|-|-|Yes|
 |[**WebGLM**](#webglmdataset)| 43579|-|-|-|Yes|
 |[**WebGPT**](#webgptdataset)| 272|-|-|-|Yes|
+|[**HAGRID**](#hagriddataset)| 4532|-|-|-|Yes|
 
 - **[ELI5](https://github.com/facebookresearch/ELI5):** The dataset is released by Meta, where the original paper is in [link](https://arxiv.org/pdf/1907.09190.pdf). It is the first large-scale corpus for long-form question answering, a task requiring elaborate and in-depth answers to openended questions. The dataset comprises 270K threads from the Reddit forum “Explain Like I’m Five” (ELI5) where an online community provides answers to questions which are comprehensible by five year olds. Compared to existing datasets, ELI5 comprises diverse questions requiring multi-sentence answers. Sample:
 ```
@@ -90,6 +91,16 @@ Example:
 Some words are considered "bad" because they offend others.[2] They are words that refer to impolite things, like body parts or bodily functions and most people don't like to hear about it.[2] Some people believe there are no "bad" words, just inappropriate times and places to say certain words.[2]
 ```
 
+- **[HAGRID](https://github.com/project-miracl/hagrid):** The dataset is released by Waterloo, where the original paper is in [link](http://arxiv.org/abs/2307.16883). It is a dataset for generative information-seeking scenarios. It is constructed on top of MIRACL, an information retrieval dataset that consists of queries along with a set of manually labelled relevant passages (quotes). Sample:
+```
+[Question]: When is a language considered dead?
+[Documents]: 
+	[1] A language is often declared to be dead even before the last native speaker of the language has died. If there are only a few elderly speakers of a language remaining, and they no longer use that language for communication, then the language is effectively dead. A language that has reached such a reduced stage of use is generally considered moribund. Half of the spoken languages of the world are not being taught to new generations of children. Once a language is no longer a native language\u2014that is, if no children are being socialized into it as their primary language\u2014the process of transmission is ended and the language itself will not survive past the current generations.
+	[2] An endangered language, or moribund language, is a language that is at risk of falling out of use as its speakers die out or shift to speaking another language. Language loss occurs when the language has no more native speakers and becomes a \"dead language\". If no one can speak the language at all, it becomes an \"extinct language\". A dead language may still be studied through recordings or writings, but it is still dead or extinct unless there are fluent speakers. Although languages have always become extinct throughout human history, they are currently dying at an accelerated rate because of globalization, neocolonialism and linguicide (language killing).
+	...
+[Answer]: This can happen when the language has no more speakers at all, or only a few elderly speakers who no longer use the language for communication [1]. If no one can speak the language, it becomes an \"extinct language\" [2]. Although a dead language may still be studied through recordings or writings, it is still dead or extinct unless there are fluent speakers [2]. It is important to note that linguists distinguish between language \"death\" and the process where a language becomes a \"dead language\" through normal language change, leaving the old form with no native speakers [3].
+```
+
 ## Performance
 
 ### [ELI5 dataset](https://github.com/facebookresearch/ELI5) <a name="eli5dataset"></a>
@@ -119,8 +130,6 @@ Some words are considered "bad" because they offend others.[2] They are words th
 | CPM 2.6B| N/A | 55.6 | 49.8 | 61.6 | 52.6 | 55.0 |  [WebCPM: Interactive Web Search for Chinese Long-form Question Answering](http://arxiv.org/abs/2305.06849) | generative |
 | CPM 7B| N/A | 58.9 | 50.5 | 67.8 | 59.8 | 56.4 |  [WebCPM: Interactive Web Search for Chinese Long-form Question Answering](http://arxiv.org/abs/2305.06849) | generative |
 | CPM 10B| N/A | 60.4 | 54.5 | 70.0 | 62.4 | 61.2 |  [WebCPM: Interactive Web Search for Chinese Long-form Question Answering](http://arxiv.org/abs/2305.06849) | generative |
-
-<!-- ### [WebGLM dataset](https://github.com/THUDM/WebGLM) <a name="webglmdataset"></a> -->
 
 ### [WebGPT dataset](https://openaipublic.blob.core.windows.net/webgpt-answer-viewer/index.html) <a name="webgptdataset"></a>
 human evaluation
