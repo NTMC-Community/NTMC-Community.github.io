@@ -114,6 +114,7 @@ Example:
 human evaluation
 
 |Model|Code|Relevancy|Density|Truthfulness|Toxicity|Social Bias|Fluency|Correctness|Citation Accuracy|Objectivity|Truthfulness|Redundancy|Paper| type |
+| ---- | ---- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---- | ---- |
 |WebGPT 175B | N/A | 2.512 | 2.660 | 0.996 | 0.015 | 0.006 | 2.457 | 2.889 | 2.837 | 0.990 | 0.975 | 0.087 |[WebGLM: Towards An Efficient Web-Enhanced Question Answering System with Human Preferences](http://arxiv.org/abs/2306.07906) | generative |
 |Perplexity.ai | N/A | 1.652 | 1.636 | 0.955 | 0.005 | 0.001 | 2.718 | 2.321 | 2.512 | 0.726 | 0.975 | 0.032 |[WebGLM: Towards An Efficient Web-Enhanced Question Answering System with Human Preferences](http://arxiv.org/abs/2306.07906) | generative |
 |WebGPT 13B | N/A | 1.782 | 1.766 | 0.998 | 0.008 | 0.016 | 2.692 | 2.102 | 2.769 | 0.974 | 0.872 | 0.051 |[WebGLM: Towards An Efficient Web-Enhanced Question Answering System with Human Preferences](http://arxiv.org/abs/2306.07906) | generative |
