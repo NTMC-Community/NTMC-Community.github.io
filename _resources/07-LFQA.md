@@ -34,6 +34,7 @@ Example:
 |[**WikiHowNFQA**](#wikihowdataset)| 11746|-|-|113.05|No|
 |[**WebCPM**](#webcpmdataset)| 5500|2.795|-|-|Yes|
 |[**WebGLM**](#webglmdataset)| 43579|-|-|-|Yes|
+|[**WebGPT**](#webgptdataset)| 272|-|-|-|Yes|
 
 - **[ELI5](https://github.com/facebookresearch/ELI5):** The dataset is released by Meta, where the original paper is in [link](https://arxiv.org/pdf/1907.09190.pdf). It is the first large-scale corpus for long-form question answering, a task requiring elaborate and in-depth answers to openended questions. The dataset comprises 270K threads from the Reddit forum “Explain Like I’m Five” (ELI5) where an online community provides answers to questions which are comprehensible by five year olds. Compared to existing datasets, ELI5 comprises diverse questions requiring multi-sentence answers. Sample:
 ```
@@ -78,11 +79,20 @@ Example:
 [Answer]: Driving into mild to heavy snowfall at night can be disorienting because the snow can make it difficult to see and the headlights can reflect off of the snowflakes in the air, obstructing the view[1]. Additionally, snow falling heavily can be so disorienting that it can make it hard to determine where you are going. The darkness of a snowless roadway can also contribute to the disorientation, as it can blend into the dark sky and create a sudden contrast when the snow begins to fall[5].
 ```
 
+- **[WebGPT](https://openaipublic.blob.core.windows.net/webgpt-answer-viewer/index.html):** The dataset is non-cherry-picked samples for the paper [WebGPT: Browser-assisted question-answering with human feedback](https://cdn.openai.com/WebGPT.pdf)([blog post](https://openai.com/research/webgpt)). The questions are from the ELI5 test set, and the answers are those used in the evaluations against human demonstrations in the paper.Sample:
+```
+[Question]: Why did we decide that certain words were "bad" and shouldn't be used in social settings?
+[Documents]: 
+	[1] "Words in general that are considered bad tend to relate to parts of our lives that we don't like talking about in public, like bathroom functions," Benjamin Bergen says. Other words that are often considered bad relate to negative ways of talking about people and their religion, skin color, ability, gender etc. Those words are called slurs. And many people consider those the worst kind of bad words.
+	[2] Some words are considered “bad” because they offend others. They are words that refer to impolite things, like body parts or bodily functions and most people don’t like to hear about it. Some people believe there are no “bad” words, just inappropriate times and places to say certain words.
+	...
+[Answer]: In general, words that are considered "bad" relate to parts of life that people don't like talking about in public, like bathroom functions.[1] Other words considered bad relate to negative ways of talking about people and their religion, skin color, ability, gender, etc.[1] These words are called slurs and many people consider them the worst kind of bad words.[1]
+Some words are considered "bad" because they offend others.[2] They are words that refer to impolite things, like body parts or bodily functions and most people don't like to hear about it.[2] Some people believe there are no "bad" words, just inappropriate times and places to say certain words.[2]
+```
+
 ## Performance
 
 ### [ELI5 dataset](https://github.com/facebookresearch/ELI5) <a name="eli5dataset"></a>
-
-
 
 | Model   | Code|PPL|ROUGE-1|ROUGE-2|ROUGE-L|Paper| type |
 |  ----  | ----  | --- | --- | --- | --- | ----  | ----  |
@@ -110,7 +120,9 @@ Example:
 | CPM 7B| N/A | 58.9 | 50.5 | 67.8 | 59.8 | 56.4 |  [WebCPM: Interactive Web Search for Chinese Long-form Question Answering](http://arxiv.org/abs/2305.06849) | generative |
 | CPM 10B| N/A | 60.4 | 54.5 | 70.0 | 62.4 | 61.2 |  [WebCPM: Interactive Web Search for Chinese Long-form Question Answering](http://arxiv.org/abs/2305.06849) | generative |
 
-### [WebGLM dataset](https://github.com/THUDM/WebGLM) <a name="webglmdataset"></a>
+<!-- ### [WebGLM dataset](https://github.com/THUDM/WebGLM) <a name="webglmdataset"></a> -->
+
+### [WebGPT dataset](https://openaipublic.blob.core.windows.net/webgpt-answer-viewer/index.html) <a name="webgptdataset"></a>
 human evaluation
 
 |Model|Code|Relevancy|Density|Truthfulness|Toxicity|Social Bias|Fluency|Correctness|Citation Accuracy|Objectivity|Truthfulness|Redundancy|Paper| type |
