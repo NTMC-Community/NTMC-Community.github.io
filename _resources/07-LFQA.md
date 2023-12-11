@@ -33,6 +33,7 @@ Example:
 |[**ELI5**](#eli5dataset)| 272K|-|857.6|130.6|No|
 |[**WikiHowNFQA**](#wikihowdataset)| 11746|-|-|113.05|No|
 |[**WebCPM**](#webcpmdataset)| 5500|2.795|-|-|Yes|
+|[**WebGLM**](#webglmdataset)| 5500|2.795|-|-|Yes|
 
 - **[ELI5](https://github.com/facebookresearch/ELI5):** The dataset is released by Meta, where the original paper is in [link](https://arxiv.org/pdf/1907.09190.pdf). It is the first large-scale corpus for long-form question answering, a task requiring elaborate and in-depth answers to openended questions. The dataset comprises 270K threads from the Reddit forum “Explain Like I’m Five” (ELI5) where an online community provides answers to questions which are comprehensible by five year olds. Compared to existing datasets, ELI5 comprises diverse questions requiring multi-sentence answers. Sample:
 ```
@@ -63,6 +64,18 @@ Example:
 	[2] 彩虹是因为阳光射到空中接近圆型的小水滴，造成色散及反射而成的。所以它的实际半径取决于空气里水滴的分布面积和大小，空气里水滴的大小决定了虹的色彩鲜艳程度和宽窄。空气中的水滴大，虹就鲜艳。也比较窄；反之，水滴小，虹色就淡，也比较宽。这和你到彩虹的距离没关系,例如你在远处看个汽车很小,但汽车本身其实还是那么大!彩虹的形成和云的密度，浓度，温度基本没什么关系!其实只要有空气中有水滴，而阳光正在观察者的背后以低角度照射，便可能产生可以观察到的彩虹现象。彩虹最常在下午，雨后刚转天晴时出现。这时空气内尘埃少而充满小水滴，天空的一边因为仍有雨云而较暗。而观察者头上或背后已没有云的遮挡而可见阳光，这样彩虹便会较容易被看到。另一个经常可见到彩虹的地方是瀑布附近。在晴朗的天气下背对阳光在空中洒水或喷洒水雾，亦可以人工制造彩虹。\n
 	...    
 [Answer]: 彩虹是由阳光射到空中接近圆型的小水滴，造成色散及反射而成的，所以其实际大小取决于空气里水滴的分布面积和大小。空气中的水滴大，彩虹就比较窄；反之，水滴小，彩虹就比较宽。【2】当折射率相同时，彩虹的大小一定相同。但大多数情况下，会有一部分彩虹出现在地平线以下，导致其部分不可见。同时，太阳高度角越大，对日点的位置越低，地平线相对彩虹越高，因此彩虹看起来就越“小”；反之亦然。【1】
+```
+
+- **[WebGLM](https://github.com/THUDM/WebGLM):** The dataset is released by Tsinghua, where the original paper is in [link](http://arxiv.org/abs/2306.07906). It is the dataset used to train the WebGLM generator module. It consists of 43,579 high-quality data samples for the train split, 1,000 for the validation split, and 400 for the test split. Sample:
+```
+[Question]: Why is driving into mild to heavy snowfall at night so disorienting?
+[Documents]: 
+	[1] Driving in snow at night is dangerous because the snow makes it very difficult to see. Your headlights will reflect off of the snowflakes in the air as well as obstruct your view. This means that the harder it’s snowing, the more dangerous it is to drive.
+	[2] I'm not sure \"spatial disorientation\" is how I'd put it, but I remember one time when I was driving at night on the Taconic State Parkway at night, and the rain started coming down so hard that I simply couldn't see where I was going. I slowed down, put on the flashers, and found a safe place to pull over and wait it out. It really was that bad.
+	[3] I'm not sure \"spatial disorientation\" is how I'd put it, but I remember one time when I was driving at night on the Taconic State Parkway, and the rain started coming down so hard that I simply couldn't see where I was going. I slowed down, put on the flashers, and found a safe place to pull over and wait it out. It really was that bad.
+	[4] Why not???? I have been somewhat disoriented in heavy snow at night flashing by in the headlights. (I have been spatially disoriented in establishments that serve adult beverages too.)
+	[5] Same thing has happened to me at night occasionally with moderately heavy snow storms that suddenly just start. For some reason, now that I think about it, it tends to happen to me more when there is no snow on the ground--its probably the darker background of a snowless roadway that is helping with the disorientation (blends into the dark sky) and then you have the rapid big flakes coming down in your headlights.
+[Answer]: Driving into mild to heavy snowfall at night can be disorienting because the snow can make it difficult to see and the headlights can reflect off of the snowflakes in the air, obstructing the view[1]. Additionally, snow falling heavily can be so disorienting that it can make it hard to determine where you are going. The darkness of a snowless roadway can also contribute to the disorientation, as it can blend into the dark sky and create a sudden contrast when the snow begins to fall[5].
 ```
 
 ## Performance
@@ -97,3 +110,10 @@ Example:
 | CPM 7B| N/A | 58.9 | 50.5 | 67.8 | 59.8 | 56.4 |  [WebCPM: Interactive Web Search for Chinese Long-form Question Answering](http://arxiv.org/abs/2305.06849) | generative |
 | CPM 10B| N/A | 60.4 | 54.5 | 70.0 | 62.4 | 61.2 |  [WebCPM: Interactive Web Search for Chinese Long-form Question Answering](http://arxiv.org/abs/2305.06849) | generative |
 
+### [WebGLM dataset](https://github.com/THUDM/WebGLM) <a name="webglmdataset"></a>
+human evaluation
+|Model|Code|Relevancy|Density|Truthfulness|Toxicity|Social Bias|Fluency|Correctness|Citation Accuracy|Objectivity|Truthfulness|Redundancy|Paper| type |
+|WebGPT 175B | N/A | 2.512 | 2.660 | 0.996 | 0.015 | 0.006 | 2.457 | 2.889 | 2.837 | 0.990 | 0.975 | 0.087 |[WebGLM: Towards An Efficient Web-Enhanced Question Answering System with Human Preferences](http://arxiv.org/abs/2306.07906) | generative |
+|Perplexity.ai | N/A | 1.652 | 1.636 | 0.955 | 0.005 | 0.001 | 2.718 | 2.321 | 2.512 | 0.726 | 0.975 | 0.032 |[WebGLM: Towards An Efficient Web-Enhanced Question Answering System with Human Preferences](http://arxiv.org/abs/2306.07906) | generative |
+|WebGPT 13B | N/A | 1.782 | 1.766 | 0.998 | 0.008 | 0.016 | 2.692 | 2.102 | 2.769 | 0.974 | 0.872 | 0.051 |[WebGLM: Towards An Efficient Web-Enhanced Question Answering System with Human Preferences](http://arxiv.org/abs/2306.07906) | generative |
+|WebGLM 10B | N/A | 1.980 | 2.226 | 0.983 | 0.002 | 0.002 | 2.829 | 2.810 | 2.757 | 0.943 | 0.998 | 0.021 |[WebGLM: Towards An Efficient Web-Enhanced Question Answering System with Human Preferences](http://arxiv.org/abs/2306.07906) | generative |
