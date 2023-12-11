@@ -32,7 +32,7 @@ Example:
 |---- | ---- | ---- |---- | ---- | ---- |
 |[**ELI5**](#eli5dataset)| 272K|-|857.6|130.6|No|
 |[**WikiHowNFQA**](#wikihowdataset)| 11746|-|-|113.05|No|
-
+|[**WebCPM**](#webcpmdataset)| 5500|2.795|-|-|Yes|
 
 - **[ELI5](https://github.com/facebookresearch/ELI5):** The dataset is released by Meta, where the original paper is in [link](https://arxiv.org/pdf/1907.09190.pdf). It is the first large-scale corpus for long-form question answering, a task requiring elaborate and in-depth answers to openended questions. The dataset comprises 270K threads from the Reddit forum “Explain Like I’m Five” (ELI5) where an online community provides answers to questions which are comprehensible by five year olds. Compared to existing datasets, ELI5 comprises diverse questions requiring multi-sentence answers. Sample:
 ```
@@ -51,6 +51,19 @@ Example:
 [Answer]:  To seal concrete floors, use an epoxy sealer if you want something durable that comes in a variety of colors. For indoor concrete floors that won't be exposed to oil or grease, use an acrylic sealer, which is easy to apply. If you want to seal over concrete floors that already have a seal, try a polyurethane sealer. To seal concrete floors without changing their appearance, you can use a silane or siloxane sealer, which won't alter the color or finish of the floors.
 ```
 
+- **[WebCPM](https://github.com/thunlp/WebCPM):** The dataset is released by Tsinghua, where the original paper is in [link](http://arxiv.org/abs/2305.06849). It is the first public QA dataset that involves interactive web search, and also the first dataset that targets Chinese LFQA. WebCPM contains 5,500 question-answer pairs, together with 15,372 supporting facts and 125,954 web search actions. Sample:
+```
+[Question]:是什么决定了彩虹的拱门大小或“周长”？
+[Actions]:
+	RECORD_START：(result)
+	PRESS_SEARCH: (result)
+	...
+[Documents]: 
+	[1] 但一般来说形成彩虹的都是水，折射率的大小差可以忽略不计。当折射率相同时，彩虹的大小一定相同。但为什么平时我们会觉得彩虹有大小呢？\n普通彩虹总是围绕着对日点（antisolar point），当然像反射虹（reflection bow）、三、四次虹这类特殊的，就不考虑了。\n可以理解为，彩虹好像围绕对日点，以40°-42°为半径画圆，这就是彩虹。但绝大多数情况下，会有一部分彩虹出现在地平线以下，导致其部分不可见。\n做个实验：随便画一个圆，然后用一块纸板，从它的下方渐渐水平向上平移，你会发现你画的圆的可见部分越来越少了。\n对日点的位置由太阳在天球上的位置决定。太阳高度角越大，对日点的位置越低，地平线相对彩虹越高，因此彩虹看起来就越“小”；反之亦然。
+	[2] 彩虹是因为阳光射到空中接近圆型的小水滴，造成色散及反射而成的。所以它的实际半径取决于空气里水滴的分布面积和大小，空气里水滴的大小决定了虹的色彩鲜艳程度和宽窄。空气中的水滴大，虹就鲜艳。也比较窄；反之，水滴小，虹色就淡，也比较宽。这和你到彩虹的距离没关系,例如你在远处看个汽车很小,但汽车本身其实还是那么大!彩虹的形成和云的密度，浓度，温度基本没什么关系!其实只要有空气中有水滴，而阳光正在观察者的背后以低角度照射，便可能产生可以观察到的彩虹现象。彩虹最常在下午，雨后刚转天晴时出现。这时空气内尘埃少而充满小水滴，天空的一边因为仍有雨云而较暗。而观察者头上或背后已没有云的遮挡而可见阳光，这样彩虹便会较容易被看到。另一个经常可见到彩虹的地方是瀑布附近。在晴朗的天气下背对阳光在空中洒水或喷洒水雾，亦可以人工制造彩虹。\n
+	...    
+[Answer]: 彩虹是由阳光射到空中接近圆型的小水滴，造成色散及反射而成的，所以其实际大小取决于空气里水滴的分布面积和大小。空气中的水滴大，彩虹就比较窄；反之，水滴小，彩虹就比较宽。【2】当折射率相同时，彩虹的大小一定相同。但大多数情况下，会有一部分彩虹出现在地平线以下，导致其部分不可见。同时，太阳高度角越大，对日点的位置越低，地平线相对彩虹越高，因此彩虹看起来就越“小”；反之亦然。【1】
+```
 
 ## Performance
 
@@ -71,6 +84,16 @@ Example:
 | DPR + text-davinci-003 (Bolotova et al. 2023)| N/A | 0.868 | 35.4 | 9.2 | 20.2 |  [WikiHowQA: A Comprehensive Benchmark for Multi-Document Non-Factoid Question Answering](https://arxiv.org/pdf/1907.09190.pdf) | generative |
 
 
+### [WebCPM dataset](https://github.com/thunlp/WebCPM) <a name="webcpmdataset"></a>
 
-
+|Model|Code|Action Micro-F1|Action Macro-F1|Query Generation Rouge-L|Fact Extraction Rouge-L|Information Synthesis Rouge-L|Paper| type |
+|  ----  | ----  |  ----  | --- | --- | --- | --- | ----  | ----  |
+| mT5 BASE| N/A | 53.8 | 44.0 | 62.4 | 56.7 | 56.8 |  [WebCPM: Interactive Web Search for Chinese Long-form Question Answering](http://arxiv.org/abs/2305.06849) | generative |
+| mT0 BASE| N/A | 58.2 | 52.1 | 64.6 | 60.0 | 51.4 |  [WebCPM: Interactive Web Search for Chinese Long-form Question Answering](http://arxiv.org/abs/2305.06849) | generative |
+| Mengzi-T5 BASE| N/A | 58.1 | 51.2 | 62.6 | 61.9 | 57.7 |  [WebCPM: Interactive Web Search for Chinese Long-form Question Answering](http://arxiv.org/abs/2305.06849) | generative |
+| mBART LARGE| N/A | 53.6 | 41.1 | 50.4 | 56.5 | 60.2 |  [WebCPM: Interactive Web Search for Chinese Long-form Question Answering](http://arxiv.org/abs/2305.06849) | generative |
+| C-BART LARGE| N/A | 43.8 | 31.3 | 56.1 | 49.3 | 50.6 |  [WebCPM: Interactive Web Search for Chinese Long-form Question Answering](http://arxiv.org/abs/2305.06849) | generative |
+| CPM 2.6B| N/A | 55.6 | 49.8 | 61.6 | 52.6 | 55.0 |  [WebCPM: Interactive Web Search for Chinese Long-form Question Answering](http://arxiv.org/abs/2305.06849) | generative |
+| CPM 7B| N/A | 58.9 | 50.5 | 67.8 | 59.8 | 56.4 |  [WebCPM: Interactive Web Search for Chinese Long-form Question Answering](http://arxiv.org/abs/2305.06849) | generative |
+| CPM 10B| N/A | 60.4 | 54.5 | 70.0 | 62.4 | 61.2 |  [WebCPM: Interactive Web Search for Chinese Long-form Question Answering](http://arxiv.org/abs/2305.06849) | generative |
 
