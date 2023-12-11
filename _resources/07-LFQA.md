@@ -33,7 +33,7 @@ Example:
 |[**ELI5**](#eli5dataset)| 272K|-|857.6|130.6|No|
 |[**WikiHowNFQA**](#wikihowdataset)| 11746|-|-|113.05|No|
 |[**WebCPM**](#webcpmdataset)| 5500|2.795|-|-|Yes|
-|[**WebGLM**](#webglmdataset)| 5500|2.795|-|-|Yes|
+|[**WebGLM**](#webglmdataset)| 43579|-|-|-|Yes|
 
 - **[ELI5](https://github.com/facebookresearch/ELI5):** The dataset is released by Meta, where the original paper is in [link](https://arxiv.org/pdf/1907.09190.pdf). It is the first large-scale corpus for long-form question answering, a task requiring elaborate and in-depth answers to openended questions. The dataset comprises 270K threads from the Reddit forum “Explain Like I’m Five” (ELI5) where an online community provides answers to questions which are comprehensible by five year olds. Compared to existing datasets, ELI5 comprises diverse questions requiring multi-sentence answers. Sample:
 ```
@@ -112,6 +112,7 @@ Example:
 
 ### [WebGLM dataset](https://github.com/THUDM/WebGLM) <a name="webglmdataset"></a>
 human evaluation
+
 |Model|Code|Relevancy|Density|Truthfulness|Toxicity|Social Bias|Fluency|Correctness|Citation Accuracy|Objectivity|Truthfulness|Redundancy|Paper| type |
 |WebGPT 175B | N/A | 2.512 | 2.660 | 0.996 | 0.015 | 0.006 | 2.457 | 2.889 | 2.837 | 0.990 | 0.975 | 0.087 |[WebGLM: Towards An Efficient Web-Enhanced Question Answering System with Human Preferences](http://arxiv.org/abs/2306.07906) | generative |
 |Perplexity.ai | N/A | 1.652 | 1.636 | 0.955 | 0.005 | 0.001 | 2.718 | 2.321 | 2.512 | 0.726 | 0.975 | 0.032 |[WebGLM: Towards An Efficient Web-Enhanced Question Answering System with Human Preferences](http://arxiv.org/abs/2306.07906) | generative |
