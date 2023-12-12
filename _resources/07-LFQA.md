@@ -33,9 +33,10 @@ Example:
 |[**ELI5**](#eli5dataset)| 272K|-|857.6|130.6|No|
 |[**WikiHowNFQA**](#wikihowdataset)| 11746|-|-|113.05|No|
 |[**WebCPM**](#webcpmdataset)| 5500|2.795|-|-|Yes|
-|[**WebGLM**](#webglmdataset)| 43579|-|-|-|Yes|
+|[**WebGLM**](#webglmdataset)| 44979 |-|-|-|Yes|
 |[**WebGPT**](#webgptdataset)| 272|-|-|-|Yes|
 |[**HAGRID**](#hagriddataset)| 4532|-|-|-|Yes|
+|[**Natural Questions**](#naturalquestions)| 307,373 |-|-|-|No|
 
 - **[ELI5](https://github.com/facebookresearch/ELI5):** The dataset is released by Meta, where the original paper is in [link](https://arxiv.org/pdf/1907.09190.pdf). It is the first large-scale corpus for long-form question answering, a task requiring elaborate and in-depth answers to openended questions. The dataset comprises 270K threads from the Reddit forum “Explain Like I’m Five” (ELI5) where an online community provides answers to questions which are comprehensible by five year olds. Compared to existing datasets, ELI5 comprises diverse questions requiring multi-sentence answers. Sample:
 ```
@@ -101,6 +102,23 @@ Some words are considered "bad" because they offend others.[2] They are words th
 [Answer]: This can happen when the language has no more speakers at all, or only a few elderly speakers who no longer use the language for communication [1]. If no one can speak the language, it becomes an \"extinct language\" [2]. Although a dead language may still be studied through recordings or writings, it is still dead or extinct unless there are fluent speakers [2]. It is important to note that linguists distinguish between language \"death\" and the process where a language becomes a \"dead language\" through normal language change, leaving the old form with no native speakers [3].
 ```
 
+- [**Natural Questions**](https://ai.google.com/research/NaturalQuestions)**: ** The Natural Questions corpus is a question answering dataset containing 307,373 training examples, 7,830 development examples, and 7,842 test examples. Each example is comprised of a google.com query and a corresponding Wikipedia page. Each Wikipedia page has a passage (or long answer) annotated on the page that answers the question and one or more short spans from the annotated passage containing the actual answer. The long and the short answer annotations can however be empty. If they are both empty, then there is no answer on the page at all. If the long answer annotation is non-empty, but the short answer annotation is empty, then the annotated passage answers the question but no explicit short answer could be found. Finally 1% of the documents have a passage annotated with a short answer that is “yes” or “no”, instead of a list of short spans. Sample:
+
+```
+[document_text]:[...]and is meant to build loyalty , trust , or brand awareness . Marketing emails can be sent to a purchased lead list or a current customer database . The term usually refers to sending email messages with the purpose of enhancing a merchant 's relationship with current or previous customers , encouraging customer loyalty and repeat business ,[...]
+[long_answer_candidates]:[...]{"start_token": 1952, "top_level": true, "end_token": 2019}[...]
+[question_text]:which is the most common use of opt-in e-mail marketing
+[annotations]:
+	[yes_no_answer]:NONE
+	[long_answer]:{"start_token": 1952, "candidate_index": 54, "end_token": 2019}
+	[short_answers]:[{"start_token": 1960, "end_token": 1969}]
+	[annotation_id]:593165450220027640
+[document_url]:https://en.wikipedia.org//w/index.php?title=Email_marketing&amp;oldid=814071202
+[example_id]:5655493461695504401
+```
+
+
+
 ## Performance
 
 ### [ELI5 dataset](https://github.com/facebookresearch/ELI5) <a name="eli5dataset"></a>
@@ -140,3 +158,29 @@ human evaluation
 |Perplexity.ai | N/A | 1.652 | 1.636 | 0.955 | 0.005 | 0.001 | 2.718 | 2.321 | 2.512 | 0.726 | 0.975 | 0.032 |[WebGLM: Towards An Efficient Web-Enhanced Question Answering System with Human Preferences](http://arxiv.org/abs/2306.07906) | generative |
 |WebGPT 13B | N/A | 1.782 | 1.766 | 0.998 | 0.008 | 0.016 | 2.692 | 2.102 | 2.769 | 0.974 | 0.872 | 0.051 |[WebGLM: Towards An Efficient Web-Enhanced Question Answering System with Human Preferences](http://arxiv.org/abs/2306.07906) | generative |
 |WebGLM 10B | N/A | 1.980 | 2.226 | 0.983 | 0.002 | 0.002 | 2.829 | 2.810 | 2.757 | 0.943 | 0.998 | 0.021 |[WebGLM: Towards An Efficient Web-Enhanced Question Answering System with Human Preferences](http://arxiv.org/abs/2306.07906) | generative |
+
+### [Natural Questions dataset](https://ai.google.com/research/NaturalQuestions) <a name="naturalquestions"></a>
+
+#### QA task 
+
+| Model   | Code|EM|Paper| type |
+|  ----  | ----  |  ----  | ----  | ----  |
+| Atlas(full, Wiki-dec-2018 index)(Gautier et al. 2022) | [github](https://paperswithcode.com/paper/few-shot-learning-with-retrieval-augmented#code) | 64.0 | [Atlas: Few-shot Learning with Retrieval Augmented Language Models](https://arxiv.org/pdf/2208.03299v3.pdf) | generative |
+| Atlas (full, Wiki-dec-2021+CC index)(Gautier et al. 2022) | [github](https://paperswithcode.com/paper/few-shot-learning-with-retrieval-augmented#code) | 60.4 | [Atlas: Few-shot Learning with Retrieval Augmented Language Models](https://arxiv.org/pdf/2208.03299v3.pdf) | generative |
+| FiE(Akhil et al. 2022) | N/A | 58.4 | [ FiE: Building a Global Probability Space by Leveraging Early Fusion in Encoder for Open-Domain Question Answering](https://arxiv.org/pdf/2211.10147v1.pdf) | abstractive |
+
+#### Long Answer
+
+| Model                            | Code | F1      | Precision | Recall  | R@P = 90 | **R@P = 75** | R@P = 50 | Paper                                                        | type        |
+| :------------------------------- | ---- | :------ | :-------- | :-----: | :------: | :----------: | :------: | ------------------------------------------------------------ | ----------- |
+| PoolingFormer(Zhang et al. 2021) | N/A  | 0.79823 | 0.7847    | 0.81224 | 0.62448  |    0.8379    | 0.88748  | [Poolingformer: Long Document Modeling with Pooling Attention](https://arxiv.org/pdf/2105.04371v2.pdf) | abstractive |
+| lsg-bert                         |      | 0.79816 | 0.79659   | 0.79974 | 0.59509  |    0.8333    | 0.88484  |                                                              |             |
+| D-FORMER-V3                      |      | 0.79323 | 0.79978   | 0.7868  | 0.59772  |   0.81926    | 0.87168  |                                                              |             |
+
+#### Short Answer
+
+| Model                                    | Code | F1      | Precision | Recall  | R@P = 90 | **R@P = 75** | R@P = 50 | Paper                                                        | type        |
+| :--------------------------------------- | ---- | :------ | :-------- | :-----: | :------: | :----------: | :------: | ------------------------------------------------------------ | ----------- |
+| ReflectionNet-ensemble(Wang et al. 2020) | N/A  | 0.64114 | 0.70445   | 0.58827 | 0.35046  |   0.54355    | 0.66144  | [No Answer is Better Than Wrong Answer: A Reflection Model for Document Level Machine Reading Comprehension](https://arxiv.org/pdf/2009.12056v2.pdf) | abstractive |
+| PoolingFormer(Zhang et al. 2021)         | N/A  | 0.61629 | 0.70369   | 0.5482  | 0.17567  |    0.509     | 0.63995  | [Poolingformer: Long Document Modeling with Pooling Attention](https://arxiv.org/pdf/2105.04371v2.pdf) | abstractive |
+| RoBERTa-mnlp-ensemble                    |      | 0.61409 | 0.6961    | 0.54936 | 0.28223  |   0.50436    | 0.62747  |                                                              |             |
